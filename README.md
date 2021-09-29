@@ -3,7 +3,7 @@
 
 Suprir a necessidade de uma educação de reforço realizando um match ideal entre aluno, professor e conteúdo, servindo como intermediador entre as duas pontas. Solução construída através da montagem de um plataforma online.
 
-## Alunos integrantes da equipe:
+## Alunos integrantes da equipe
 
 * Camila Machado Pires Maia
 * Gustavo Oliveira Rocha Gomes
