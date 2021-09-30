@@ -55,8 +55,3 @@ Karol Boa Sorte -
 # 3.4 Quadro de controles de tarefas (Kanban)
 
 
-|   eu como    | quero/desejo   |    para             aaaaaaaaaaaaaaaaa   |      
-| :---         |     :---:      |          ---:       aaaaaaaaaaaaaaaaa   |
-| git status   | git status     | git status  aaaaaaaaaaaaaaaaa           |
-| git diff     | git diff       | git diff        aaaaaaaaaaaaaaaaa       |
-
