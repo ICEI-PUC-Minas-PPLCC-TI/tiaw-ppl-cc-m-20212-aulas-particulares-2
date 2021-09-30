@@ -1,5 +1,5 @@
 
-# 1. Contexto do Projeto:
+# 1 Contexto do Projeto:
 
 # 1.1 Problema:
 
@@ -16,7 +16,7 @@ A justificativa desse projeto é para resolver o problema de estudantes que poss
 
 O foco do nosso trabalho em questão do público alvo do nosso projeto envolve alunos do Ensino Fundamental e Ensino Médio, pais de alunos e professores ou alunos que buscam dar aulas particulares. 
 
-# 2. Especificação do Projeto
+# 2 Especificação do Projeto
 
 # 2.1 Histórias de usuários:
 
