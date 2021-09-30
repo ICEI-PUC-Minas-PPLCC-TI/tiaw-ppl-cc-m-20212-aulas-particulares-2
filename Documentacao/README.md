@@ -8,7 +8,7 @@
 
 
 # Justificativa:
-Para resolver o problema de estudantes que possuem dificuldades de encontrar professores particulares e de professores que buscar dar para tirar dúvidas com pessoas específicas ou para jovens que querem dar aula particular para conseguir uma renda extra. Então, com v nesse cenário agravado do ead pdoemos observar a urgencia de uma plataforma como a que iremos criar. 
+A justificativa desse projeto é para resolver o problema de estudantes que possuem dificuldades de encontrar professores particulares para tirar dúvidas específicase e de professores ou jovens que buscam alunos para ensinar para conseguir uma renda extra. Em vista desse cenário, agravado pelo EAD podemos observar a urgência de uma plataforma online na qual nosso grupo irá criar. 
 
 # Público - alvo: 
 
