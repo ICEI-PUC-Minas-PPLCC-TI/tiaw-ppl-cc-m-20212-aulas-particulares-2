@@ -1,4 +1,3 @@
-# = Documentação do Projeto =
 
 # Contexto do Projeto:
 
