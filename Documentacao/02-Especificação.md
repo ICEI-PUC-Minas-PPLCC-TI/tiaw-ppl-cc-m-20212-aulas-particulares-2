@@ -1,6 +1,7 @@
+# Especificações do projeto
 
-
-
+## Histórias de usuários
+### A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
 
 
 | Eu como …[PERSONA]           | … quero/desejo … [O QUE]                                              | … para ....[POR QUE]                                                   |
