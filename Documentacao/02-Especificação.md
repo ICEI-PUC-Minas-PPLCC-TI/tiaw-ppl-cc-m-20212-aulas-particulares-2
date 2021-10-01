@@ -54,3 +54,16 @@
 | RNF-04 | Deve ser publicado num servidor de qualidade                                    | MÉDIA      |
 | RNF-05 | Possível implementação em aplicação móvel no futuro, na Play Store              | BAIXA      |
 | RNF-06 | Deve ser compatível com toda regulamentçao das atuais leis vigentes brasileiras | ALTA       |
+<br>
+
+## Restrições
+- As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do mesmo
+<br>
+
+| ID    | RESTRIÇÃO                                                                                         |
+|-------|---------------------------------------------------------------------------------------------------|
+| RE-01 | O projeto deve ser entregue até o final do segundo semestre letivo do ano de 2021                 |
+| RE-02 | Desenvolvimento restrito aos membors do grupo                                                     |
+| RE-03 | Todas as Sprints devem ser entregues no prazo correto                                             |
+| RE-04 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend (HTML, CSS, JavaScript) |
+<br>
