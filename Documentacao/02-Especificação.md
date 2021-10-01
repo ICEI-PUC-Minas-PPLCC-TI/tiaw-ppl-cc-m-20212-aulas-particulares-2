@@ -20,7 +20,7 @@
 <br>
 
 ## Requisitos Funcionais
-- A tabela a seguir apresenta os requisitos funcionais do projeto, seguidos da sua prioridade de implementação.
+- A tabela a seguir apresenta os requisitos funcionais do projeto, seguidos de sua descrição e prioridade de implementação.
 <br>
 
 | ID    | DESCRIÇÃO                                                                                                              | PRIORIDADE |
@@ -40,3 +40,17 @@
 | RF-13 | Critérios de permanência no site e banimento (número máximo de denúncias, por exemplo)                                 | MÉDIA      |
 | RF-14 | Carrossel com avaliações de clientes acima do rodapé do site                                                           | MÉDIA      |
 | RF-14 | Oferecer suporte rápido aos clientes por número, e-mail ou whatsapp                                                    | BAIXA      |
+<br>
+
+## Requisitos Não Funcionais
+- A tabela a seguir apresenta os requisitos não funcionais do projeto, seguidos de sua descrição e prioridade de implementação.
+<br>
+
+| ID     | DESCRIÇÃO                                                                       | PRIORIDADE |
+|--------|---------------------------------------------------------------------------------|------------|
+| RNF-01 | Deve apresentar boa UX e UI, cores contrastantes e amigáveis ao olhar           | ALTA       |
+| RNF-01 | Deve ser responsivo e oferecer suporte para Desktop, Mobile e Tablet            | ALTA       |
+| RNF-03 | Deve ser compatível com os principais navegadores                               | ALTA       |
+| RNF-04 | Deve ser publicado num servidor de qualidade                                    | MÉDIA      |
+| RNF-05 | Possível implementação em aplicação móvel no futuro, na Play Store              | BAIXA      |
+| RNF-06 | Deve ser compatível com toda regulamentçao das atuais leis vigentes brasileiras | ALTA       |
