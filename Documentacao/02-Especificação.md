@@ -2,7 +2,7 @@
 <br>
 
 ## Histórias de usuários
-###### A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
+## A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
 <br>
 
 | Eu como …[PERSONA]           | … quero/desejo … [O QUE]                                              | … para ....[POR QUE]                                                   |
@@ -20,7 +20,7 @@
 <br>
 
 ##Requisitos Funcionais
-###### A tabela a seguir apresenta os requisitos funcionais do projeto, seguidos da sua prioridade de implementação.
+## A tabela a seguir apresenta os requisitos funcionais do projeto, seguidos da sua prioridade de implementação.
 <br>
 
 | ID    | DESCRIÇÃO                                                                                                              | PRIORIDADE |
