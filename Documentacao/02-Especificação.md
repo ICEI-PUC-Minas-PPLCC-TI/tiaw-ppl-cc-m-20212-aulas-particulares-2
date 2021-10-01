@@ -63,7 +63,7 @@
 | ID    | RESTRIÇÃO                                                                                         |
 |-------|---------------------------------------------------------------------------------------------------|
 | RE-01 | O projeto deve ser entregue até o final do segundo semestre letivo do ano de 2021                 |
-| RE-02 | Desenvolvimento restrito aos membors do grupo                                                     |
+| RE-02 | Desenvolvimento restrito aos membros da equipe                                                    |
 | RE-03 | Todas as Sprints devem ser entregues no prazo correto                                             |
 | RE-04 | O aplicativo deve se restringir às tecnologias básicas da Web no Frontend (HTML, CSS, JavaScript) |
 <br>
