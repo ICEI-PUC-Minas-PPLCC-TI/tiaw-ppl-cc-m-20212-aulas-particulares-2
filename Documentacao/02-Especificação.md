@@ -57,7 +57,7 @@
 <br>
 
 ## Restrições
-- As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do mesmo
+- As questões que limitam a execução desse projeto e que se configuram como obrigações absolutas para o desenvolvimento do mesmo
 <br>
 
 | ID    | RESTRIÇÃO                                                                                         |
