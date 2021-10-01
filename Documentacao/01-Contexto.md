@@ -2,7 +2,9 @@
 
 ## Problema
 A procura por reforços educacionais em paralelo à escola e universidade é algo bastante comum e de existência amplamente conhecida. Por mais que as aulas particulares sejam uma solução para suprir um déficit educacional, o verdadeiro problema reside na dificuldade em encontrar professores ou tutores qualificados para a atividade em questão. 
+
 Contratar um professor particular é um tiro no escuro, restrito somente a possíveis recomendações de amigos dentro da própria bolha social, seu futuro acaba nas mãos de alguém que você não conhece, ou que não consegue nem encontrar. O problema também se estende para aqueles com conhecimento disponível para ajudar esses alunos com déficit educacional, muitas vezes  na forma de graduandos que precisam de uma renda extra e temporária para se manter durante o período de estudos e com uma necessidade extrema de um ganho financeiro. Mas eles também têm dificuldade em encontrar alunos, todos precisam ou oferecem algo diferente. 
+
 Alunos sentem dificuldade em matérias distintas, e professores também possuem matérias distintas para oferecer, e é aqui que o problema principal reside. Por mais que exista grande oferta e demanda, o agente intermediário que conecta as pontas é inexistente, fazendo com que um mercado promissor seja posto de lado e não tenha toda sua potencialidade explorada, e a dor de milhares de alunos e professores por todo o Brasil, não tratada.
 
 
@@ -10,13 +12,15 @@ Alunos sentem dificuldade em matérias distintas, e professores também possuem 
 
 Nosso objetivo consiste numa plataforma completamente focada em exercer a função de ponte que conecta o aluno ao professor, unicamente como um agente intermediário.
 A plataforma não oferece nenhum tipo de conteúdo educativo, seu foco é completamente concentrado em formas eficientes de ligar professor e aluno que suprirão suas respectivas necessidades, com um match que pode ser realizado de várias formas.
+
 Será possível buscar tutores por matéria ou conteúdo, como matemática ou funções, por exemplo. Também é possível que o aluno preencha um perfil e deixe com a staff do site todo o trabalho de encontrar um professor ideal. O foco é conectar as partes de forma rápida, eficiente e intuitiva.
 
 
 
 ## Justificativa
 
-O problema que esse projeto almeja resolver é bem específico e pontual, sendo assim, a solução apresentada pela plataforma deve andar pela mesma linha. Soluções simples e efetivas para problemas como esse geralmente são mais acatadas. Alguém que pesquisa por professores online não tem interesse em encontrar um site repleto de funcionalidades pedagógicas, caso o quisesse, o indivíduo em questão poderia simplesmente contratar qualquer serviço das dezenas de cursinhos online existentes hoje no Brasil. 
+O problema que esse projeto almeja resolver é bem específico e pontual, sendo assim, a solução apresentada pela plataforma deve andar pela mesma linha. Soluções simples e efetivas para problemas como esse geralmente são mais acatadas. Alguém que pesquisa por professores online não tem interesse em encontrar um site repleto de funcionalidades pedagógicas, caso o quisesse, o indivíduo em questão poderia simplesmente contratar qualquer serviço das dezenas de cursinhos online existentes hoje no Brasil.
+
 O usuário que habita nosso nicho, quer encontrar um professor para ter assistência individual e contato humano, para isso, a única funcionalidade essencial é a de encontrar um professor por mecanismos rápidos de busca e suporte para conectá-los.
 
 ## Público alvo
