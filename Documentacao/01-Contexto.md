@@ -1,4 +1,4 @@
-# Contexto do projeto 
+# Introdução
 
 ## Problema
 A procura por reforços educacionais em paralelo à escola e universidade é algo bastante comum e de existência amplamente conhecida. Por mais que as aulas particulares sejam uma solução para suprir um déficit educacional, o verdadeiro problema reside na dificuldade em encontrar professores ou tutores qualificados para a atividade em questão. 
