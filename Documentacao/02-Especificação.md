@@ -56,7 +56,7 @@
 | RNF-06 | Deve ser compatível com toda regulamentçao das atuais leis vigentes brasileiras | ALTA       |
 <br>
 
-## Restrições
+## Restrições do projeto
 - As questões que limitam a execução desse projeto e que se configuram como obrigações absolutas para o desenvolvimento do mesmo
 <br>
 
