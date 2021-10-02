@@ -1,16 +1,16 @@
-#Gerenciamento de Projeto
+# Gerenciamento de Projeto
 
 
 
 
-# Divisão de Papéis 
+## Divisão de Papéis 
 
 
-# Processo 
+## Processo 
 
 
 
-# Ferramentas
+## Ferramentas
 
 As ferramentas utilizadas no projeto foram: 
 
