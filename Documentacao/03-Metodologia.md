@@ -17,5 +17,5 @@
 
 ## Gerenciamento de projeto 
 - Para a gestão do projeto, a equipe optou pela utilização do ambiente de projetos do próprio GitHub, através da utilização de quadros Kanban
-![quadro_kanban](https://user-images.githubusercontent.com/79855405/135583134-512ec4e5-aa0d-4a5a-be68-4e2d27dadb51.png)
+![quadro_kanban2](https://user-images.githubusercontent.com/79855405/135696382-3d15cb77-1456-4697-b053-3d0dc8a9ea87.png)
 <br>
