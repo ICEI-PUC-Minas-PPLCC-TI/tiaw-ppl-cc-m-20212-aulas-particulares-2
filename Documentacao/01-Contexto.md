@@ -11,7 +11,7 @@ Alunos sentem dificuldade em matérias distintas, e professores também possuem 
 ## Objetivos 
 
 Nosso objetivo consiste numa plataforma completamente focada em exercer a função de ponte que conecta o aluno ao professor, unicamente como um agente intermediário.
-A plataforma não oferece nenhum tipo de conteúdo educativo, seu foco é completamente concentrado em formas eficientes de ligar professor e aluno que suprirão suas respectivas necessidades, com um match que pode ser realizado de várias formas.
+A plataforma não oferece nenhum tipo de conteúdo educativo ou pedagógico, seu foco é completamente concentrado em formas eficientes de ligar professor e aluno que suprirão suas respectivas necessidades, com um match que pode ser realizado de várias formas.
 
 Será possível buscar tutores por matéria ou conteúdo, como matemática ou funções, por exemplo. Também é possível que o aluno preencha um perfil e deixe com a staff do site todo o trabalho de encontrar um professor ideal. O foco é conectar as partes de forma rápida, eficiente e intuitiva.
 

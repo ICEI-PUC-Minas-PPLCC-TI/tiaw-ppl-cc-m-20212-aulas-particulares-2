@@ -12,6 +12,8 @@ Plataforma criada para suprir a necessidade de uma educação de reforço realiz
 ## Professores responsáveis
 
 * Carlos Augusto Paiva da Silva Martins
+* Rommel Vieira Carneiro
+* Rosilane Ribeiro da Mota
 
 ## Instruções de utilização
 
