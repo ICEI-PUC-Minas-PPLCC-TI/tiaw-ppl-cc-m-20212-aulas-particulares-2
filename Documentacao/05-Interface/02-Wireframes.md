@@ -1,7 +1,7 @@
 # Wireframes
 Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes nos itens a seguir.
 
-O protótipo interativo, responsável por demonstrar melhor a página, a relação e interação entre elas, pode ser visto [aqui](https://www.figma.com/file/uO11LfeFDDSNAioO6fR0Sh/Aulas-Particulares?node-id=0%3A1)
+O protótipo interativo, responsável por demonstrar melhor a página, a relação e a interação entre elas, pode ser visto [aqui](https://www.figma.com/file/uO11LfeFDDSNAioO6fR0Sh/Aulas-Particulares?node-id=0%3A1)
 <br><br><br>
 
 ## Tela HomePage
