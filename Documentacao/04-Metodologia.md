@@ -1,6 +1,6 @@
 # Metodologia 
 ## Relação de Ambientes de Trabalho
-- Plataformas utilizadas para composição de todo o ambiente de trabalho e seus respectivos links
+- Plataformas utilizadas para composição de todo o ambiente de trabalho e seus respectivos links:
 
 | Ambiente                           | Plataforma   | Link de Acesso                                                                                 |
 |------------------------------------|--------------|------------------------------------------------------------------------------------------------|
