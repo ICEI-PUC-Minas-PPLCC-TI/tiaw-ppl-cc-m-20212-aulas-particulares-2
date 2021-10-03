@@ -5,7 +5,7 @@
 - A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
 <br>
 
-| Eu como …[PERSONA]           | … quero/desejo … [O QUE]                                              | … para ....[POR QUE]                                                   |
+| Eu como …[PERSONA]           | … quero/desejo … [O QUE]                                              | … para ... [POR QUE]                                                   |
 |------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------|
 | Clara Pampolini              | Sentir-me confortável e sem vergonha quando tirar alguma dúvida       | Aprender as partes que não entendi da matéria                          |
 | Clara Pampolini              | Encontrar aulas particulares de forma mais fácil                      | Entender a matéria completamente para passar em medicina               |
