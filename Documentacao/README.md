@@ -6,4 +6,3 @@
 - Especificação do Projeto (Histórias de usuários, requisitos funcionais, requisitos não funcionais e restrições do projeto)
 - Metodologia (Estrutura, fluxo de trabalho no repositório do GitHub e quadro de controle de tarefas (Kanban))
 - Projeto de Interface (Fluxo do usuário, Wireframes das telas e Protótipo Interativo)
-- Apresentação do projeto
