@@ -1,3 +1,94 @@
 body{
-    background-color: blue;
+    max-height: 100%;
+    background-color: #4965a0;
+}
+
+/*Cabeçalho*/
+.header{
+    background-color: #bbe8fb;
+}
+.header .logo img{
+    margin-top: 2%;
+    max-width: 20%;
+    float: left;
+}
+
+.header .nav{
+    margin-top: 2%;
+    float: right;
+    text-decoration: none;
+}
+
+.header .nav .nav-link{
+    color: #000000;
+}
+.header .nav .nav-link:hover{
+    color: #969696;
+}
+
+.header .nav .active{
+    text-decoration: underline;
+}
+
+/*Main*/
+
+.main{
+    height: 200px;
+}
+/*Rodapé*/
+
+.footer{
+    margin-top: 20px;
+    background-color: #6ca1c0;
+    padding-top: 20px;
+}
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer ul li{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.footer ul img{
+    display: inline;
+    margin-top: 2%;
+    max-width: 50%;
+    float: left;
+}
+.footer ul li p{
+    text-decoration:solid;
+    text-transform: uppercase;
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footer ul li a{
+    font-weight:normal;
+    text-decoration: none;
+    text-transform: none;
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.footer ul li a:hover{
+    text-decoration: none;
+    color: #969696;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.footer .redes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .redes .link_rede{
+    margin: 0px;
+    display: inline;
+    width: 10%;
+    font-size: 30px;
+    margin-right: 20px;
 }
