@@ -5,12 +5,30 @@ body{
 
 /*Cabeçalho*/
 .header{
+    background-image: linear-gradient(to top,#bbe8fb,#a6e2fc);
     background-color: #bbe8fb;
+
+}
+
+.header .col-12{
+    float: left;
 }
 .header .logo img{
     margin-top: 2%;
-    max-width: 20%;
+    margin-right: 10px;
+    max-width: 50%;
+    max-width: 100px;
     float: left;
+}
+
+.header .dropdown .btn{
+    background-color: #bbe8fb;
+    border: #bbe8fb;
+    color: black;
+    font-size: 20px;
+}
+.header .dropdown .btn:hover{
+    background-color: #9edefa;
 }
 
 .header .nav{
@@ -21,9 +39,10 @@ body{
 
 .header .nav .nav-link{
     color: #000000;
+    padding: 10px;
 }
 .header .nav .nav-link:hover{
-    color: #969696;
+    color: #474747;
 }
 
 .header .nav .active{
@@ -41,6 +60,7 @@ body{
     margin-top: 20px;
     background-color: #6ca1c0;
     padding-top: 20px;
+    height: 100%;
 }
 .footer ul{
     display: flex;
@@ -76,7 +96,7 @@ body{
 
 .footer ul li a:hover{
     text-decoration: none;
-    color: #969696;
+    color: #474747;
     font-family:Arial, Helvetica, sans-serif;
 }
 
