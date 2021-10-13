@@ -3,9 +3,10 @@
 
 ## Histórias de usuários
 - A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
+- A planilha com a entrevista qualitativa completa, contendo perguntas norteadoras e respostas dos entrevistados, pode ser encontrada [aqui](https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1359546_sga_pucminas_br/EXhho_ai33lMp8YnouTwlA8BYv1ZPWY553F2Iy1RXnHhfA?e=AfuvgX)
 <br>
 
-| Eu como …[PERSONA]           | … quero/desejo … [O QUE]                                              | … para ....[POR QUE]                                                   |
+| Eu como …[PERSONA]           | … quero/desejo … [O QUE]                                              | … para ... [POR QUE]                                                   |
 |------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------|
 | Clara Pampolini              | Sentir-me confortável e sem vergonha quando tirar alguma dúvida       | Aprender as partes que não entendi da matéria                          |
 | Clara Pampolini              | Encontrar aulas particulares de forma mais fácil                      | Entender a matéria completamente para passar em medicina               |
@@ -56,8 +57,8 @@
 | RNF-06 | Deve ser compatível com toda regulamentçao das atuais leis vigentes brasileiras | ALTA       |
 <br>
 
-## Restrições
-- As questões que limitam a execução desse projeto e que se configuram como obrigações absolutas para o desenvolvimento do mesmo
+## Restrições do projeto
+- As questões que limitam a execução desse projeto e que se configuram como obrigações absolutas para o desenvolvimento do mesmo.
 <br>
 
 | ID    | RESTRIÇÃO                                                                                         |
