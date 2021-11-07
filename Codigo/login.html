@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet">
+    <script src="login.js"></script>
+    <script>
+
+        function exibeUsuarios() {
+            let listaUsuarios = '';
+            for (i = 0; i < db_usuarios.usuarios.length; i++) {
+                let usuario = db_usuarios.usuarios[i];
+                listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.logio}</td><td>${usuario.email}</td></td>`;
+            }
+            document.getElementById("table-usuarios").innerHTML = listaUsuarios;
+        }
+
+        function initPage() {
+            
+        }
+        window.addEventListener('load', initPage);
+
+    </script>
+</head>
+<body>
+    <div>
+        <button id="show-login">Login</button>
+    </div>
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Entrar</h2>
+            <div class="form-element">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" placeholder="Insira e-mail">
+            </div>
+            <div class="form-element">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Insira senha">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Lembre-se de mim</label>
+            </div>
+            <div class="form-element">
+                <button id="login-form">Entrar</button>
+            </div>
+            <div class="form-element">
+                <div id="cadastrar">
+                    <a href="#">Não é cadastrado?</a>
+                </div>
+                <div id="recuperar">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      document.querySelector("#show-login").addEventListener("click", function() {
+        usuarioCorrenteJSON1 = sessionStorage.getItem('usuarioCorrente');
+        if (usuarioCorrenteJSON1) {
+          document.getElementById("show-login").innerText="Logoin"
+          logoutUser();
+        } else {
+          document.querySelector(".popup").classList.add("active");
+        }
+      });
+        document.querySelector("#show-login").addEventListener("click", function(){document.querySelector(".popup").classList.add("active");
+        });
+        document.querySelector(".popup .close-btn").addEventListener("click", function(){document.querySelector(".popup").classList.remove("active");
+        });
+    </script>
+
+    <script>
+        function processaFormLogin(event) {
+            event.preventDefault();
+
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('senha').value;
+
+            resultadoLogin = loginUser(email, password);
+            if (resultadoLogin) {
+                window.location.href = 'index.html';
+            } else {
+                alert('Usuário ou senha incorretos');
+            }
+        }
+
+        document.getElementById('login-form').addEventListener('click', processaFormLogin);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="login.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>PAPO</title>
+</head>
+
+<body>
+
+	<!--Cabeçalho-->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="logo_menu">
+						<!--Logo-->
+						<div class="logo">
+							<img id="papo" src="img/Logo_prov.png" alt="PAPO">
+                        </div>
+
+                        <!--Menu Dropdown -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <li class="fa fa-bars"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Professores</a>
+                                <a class="dropdown-item" href="#">Matérias</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Menu principal-->
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Nosso time</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="inscrever-perfil" href="cadastro.html">Inscreva-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="show-login" href="#">Login</a>
+                        </li>
+                        <a rel="sidebar" href="#">
+                            <img id="estrela" src="https://repetit.ru/img/star_add_to_favourites.png" width="21"
+                                height="19"></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--------------- LOGIN -------------->
+
+        <script>
+          function exibeUsuarios() {
+              let listaUsuarios = '';
+              for (i = 0; i < db_usuarios.usuarios.length; i++) {
+                  let usuario = db_usuarios.usuarios[i];
+                  listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.logio}</td><td>${usuario.email}</td></td>`;
+              }
+              document.getElementById("table-usuarios").innerHTML = listaUsuarios;
+          }
+
+          function initPage() {
+              
+
+          }
+          window.addEventListener('load', initPage);
+        </script>
+      
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
+              <h2>Entrar</h2>
+              <div class="form-element">
+                  <label for="email">E-mail</label>
+                  <input type="text" id="email" placeholder="Insira e-mail">
+              </div>
+              <div class="form-element">
+                  <label for="senha">Senha</label>
+                  <input type="password" id="senha" placeholder="Insira senha">
+              </div>
+              <div class="form-element">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Lembre-se de mim</label>
+              </div>
+              <div class="form-element">
+                  <button id="login-form">Entrar</button>
+              </div>
+              <div class="form-element">
+                  <div id="cadastrar">
+                      <a href="cadastro.html">Não é cadastrado?</a>
+                  </div>
+                  <div id="recuperar">
+                      <a href="#">Esqueceu sua senha?</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <script>
+          function processaFormLogin(event) {
+              event.preventDefault();
+
+              var email = document.getElementById('email').value;
+              var password = document.getElementById('senha').value;
+
+              resultadoLogin = loginUser(email, password);
+              if (resultadoLogin) {
+                  window.location.href = '#';
+              } else {
+                  alert('Usuário ou senha incorretos');
+              }
+          }
+
+          document.getElementById('login-form').addEventListener('click', processaFormLogin);
+        </script>
+
+        <!--------------- LOGIN -------------->
+
+    </header>
+    
+    
+
+<main class="main">   
+<div class="container" >
+    <h1>Nós te ajudaremos a encontrar o
+        melhor professor</h1>
+
+    <div class="row about">
+        <div class="col-6">
+            <h4 class="title">
+              Somos a conexão perfeita entre você e seu professor ideal
+            </h4>
+
+        </div>
+        <div class="col-6">
+            <h4 class="title">
+              Escolha entre nossas inúmeras opções a solução que cabe no seu bolso
+            </h4>
+
+        </div>
+    </div>
+
+    <section class="search-sec" style="background-image:url(../img/busca.jpg); opacity:0.8">
+        <div class="container formulario">
+          <div class="row">
+            <div class="col-lg-12">
+            <form action="#" method="post" novalidate="novalidate">
+              
+                <div class="row" >
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div id="escolha">
+                            <select style=" opacity: 0.8;" class="form-control search-slt select">
+                                <option>Escolha uma matéria</option>
+                                <option>Matemática</option>
+                                <option>Física</option>
+                                <option>Química</option>
+                                <option>Biologia</option>
+                                <option>Português</option>
+                                <option>Literatura</option>
+                                <option>Redação</option>
+                                <option>Geografia</option>
+                                <option>História</option>
+                                <option>Filosofia</option>
+                                <option>Sociologia</option>
+                                <option>Programação</option>
+                                <option>Inglês</option>
+                                <option>Espanhol</option>
+                                <option>Italiano</option>
+                                <option>Alemão</option>
+                                <option>Francês</option>
+                                <option>Desenho</option>
+                                <option>Música</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                      <div class="cidade">
+                          <select style=" opacity: 0.8;"  class="form-control search-slt select">
+                              <option>Sua localização</option>
+                              <option>Acre</option>
+                              <option>Alagoas</option>
+                              <option>Amapá</option>
+                              <option>Amazonas</option>
+                              <option>Bahia</option>
+                              <option>Ceará</option>
+                              <option>Espírito Santo</option>
+                              <option>Goiás</option>
+                              <option>Maranhão</option>
+                              <option>Mato Grosso</option>
+                              <option>Mato Grosso do Sul</option>
+                              <option>Minas Gerais</option>
+                              <option>Pará</option>
+                              <option>Paraíba</option>
+                              <option>Paraná</option>
+                              <option>Pernambuco</option>
+                              <option>Piauí</option>
+                              <option>Rio de Janeiro</option>
+                              <option>Rio Grande do Norte</option>
+                              <option>Rio Grande do Sul</option>
+                              <option>Rondônia</option>
+                              <option>Roraima</option>
+                              <option>Santa Catarina</option>
+                              <option>São Paulo</option>
+                              <option>Sergipe</option>
+                              <option>Tocantins</option>
+
+
+
+
+                          </select>
+                          <div class="">
+                              <span id="ctl00_ContentPlaceHolder1_lblCurrentCity" class="city-name" style="color: white">Não mora em BH?</span>
+                              <span class="a-btn btn subject-btn"  style="color: white" href="#" id="mudar">Mudar</span>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-12">
+                        <div id="escolha">
+                          <button class="btn btn-primary btn-lg enabled" id="submitButton" type="submit">Procurar</button>
+                        </div>
+                      
+                    </div>
+                </div>
+              
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
+</div>
+
+  <div class="subjects">
+    
+    <div class="container">
+        <h2>O que você precisa estudar?</h2>
+        <p id="paragrafo">(Escolha entre nossos vários professores em +20 disciplinas)</p>
+        
+        <h3>Ensino médio e superior </h3>
+
+        <div class="row collapsed middle-high" id="materias">
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela"
+                        src="img/matematica.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Matemática</a>
+            </div>
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/portugues.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Português</a>
+            </div>
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela"
+                        src="img/historia.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">História</a>
+            </div>
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/fisica.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Física</a>
+            </div>
+            <div class="col-4">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/literatura.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Literatura</a>
+            </div>
+            <div class="col-4">
+                <a rel="sidebar" href="#">
+                    <img id="estrela"
+                        src="img/geografia.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Geografia</a>
+            </div>
+            <div class="col-4">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/quimica.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Química</a>
+            </div>
+            <div class="col-4">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/redacao.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Redação</a>
+            </div>
+            <div class="col-4">
+                <a rel="sidebar" href="#">
+                    <img id="estrela"
+                        src="img/filosofia.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Filosofia</a>
+            </div>
+            <div class="col-4">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/biologia.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Biologia</a>
+            </div>
+            <div class="col-4">
+                <a rel="sidebar" href="#">
+                    <img id="estrela"
+                        src="img/programacao.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Programação</a>
+            </div>
+
+            <div class="col-4 not-hide outrasMatBnt">
+                <input type="button" class="btn subject-btn more-subjects-btn" value="Outras matérias">
+            </div>
+
+        </div>
+        
+        <h3>Línguas estrangeiras</h3>
+
+        <div class="row collapsed languages">
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/ingles.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50% ;">Inglês</a>
+            </div>
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/espanhol.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Espanhol</a>
+            </div>
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/frances.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Francês</a>
+            </div>
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela" src="img/alemao.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Alemão</a>
+            </div>
+            <div class="col-4">
+                <a rel="sidebar" href="#">
+                    <img id="estrela"
+                        src="img/italiano.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Italiano</a>
+            </div>
+
+            <div class="col-4 not-hide outrasMatBnt">
+                <input type="button" class="btn subject-btn more-subjects-btn " value="Outras matérias">
+            </div>
+        </div>
+        
+        <h3>Outros assuntos</h3>
+
+        <div class="row collapsed languages">
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela"
+                        src="img/musica.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Música</a>
+            </div>
+            <div class="col-4 not-hide">
+                <a rel="sidebar" href="#">
+                    <img id="estrela"
+                        src="img/desenho.png"
+                        width="50" height="48"></a>
+                <a href="#" class="a-btn btn subject-btn"
+                    style="padding:5px; border:2px solid white; width: 50%">Desenho</a>
+            </div>
+
+
+            <div class="col-4 not-hide outrasMatBnt">
+                <input type="button" class="btn subject-btn more-subjects-btn" value="Outras matérias">
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="tutor">
+    <div class="container">
+        <h2>Maneiras de encontrar seu professor</h2><br>
+        
+        
+        
+        <div class="row" id="tutores">
+            <div class="col-6">
+                <div class="title-bar" style="padding:5px">
+                    <h5>Maneira rápida</h5>
+                </div>
+                
+                <img src="img/parte1.png">
+                <p>Encontre um professor no nosso site</p>
+                <img src="img/parte2.png">
+                <p>Faça sua aplicação e preencha o formulário</p>
+                <img src="img/parte3.png">
+                <p>Iremos te contatar em 15 minutos</p>
+                <button class="button">Encontrar professor</button>
+
+            </div>
+            <div class="col-6">
+                <div class="title-bar" style="padding:5px;">
+                    <h5>Maneira MUITO rápida</h5>
+                </div>
+                
+                <img src="img/parte4.png">
+                <p>Envie um pedido para seleção de um professor</p>
+                <img src="img/parte5.png">
+                <p>Iremos te contatar em 15 minutos e encontrar o professor dos seus sonhos</p>
+                <button class="button">Encontre um professor para mim</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="box" id="pedido">
+    
+    <div  class="container">
+        <h2 id="titulo">Solicitação de professor</h2><br>
+      <div class="contem">
+          <div class="row">
+              <div class="col-12 textoTutor">
+                  <textarea rows="4" cols="65"
+                      placeholder="Insira aqui o que você pretende estudar, em que frequência e para qual objetivo..."></textarea>
+              </div>
+          </div>
+          <div class="row" id="name">
+              <div class="col-12 col-sm-6" id="name-client">
+                <div class="div-client-name">
+                  <input class="input client-name" placeholder="Nome...">
+                </div>
+              </div>
+              <div class="col-12 col-sm-6" id="number-client">
+                <div class="div-client-number">
+                  <input class="input client-phone" placeholder="Seu número..." type="tel">
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <button class="button">Encontrar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</main>
+
+<!--Rodapé-->
+<footer class="footer">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 col-lfg-3">
+            <ul>
+                <li>
+                    <div class="logo">
+                        <img src="img/Logo_prov.png" alt="PAPO" >
+                          
+                    </div>
+                </li>
+                <li>
+                    <p>Telefone: +xx (xx) 9xxxx-xxxx</p>
+                </li>
+                <li>
+                    <p>E-mail: papo@gmail.com</p>
+                </li>
+                <li>
+                    <p>Localização: <a href="https://goo.gl/maps/84exw4SQHGfMFRw89" target="_blank">Belo
+                            Horizonte</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lfg-3">
+            <ul>
+                <li>
+                    <p>Aluno</p>
+                </li>
+                <li><a href="#">Encontre um professor</a></li>
+                <li><a href="#">Matérias</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lfg-3">
+            <ul>
+                <li>
+                    <p>Professor</p>
+                </li>
+                <li><a href="#">Registrar agora</a></li>
+                <li><a href="#">Termos</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 col-lfg-3">
+            <ul class="redes">
+                <li>
+                    <p>Estamos também</p>
+                </li>
+                <li class="link_rede"><a href="https://www.facebook.com/" target="_blank"><i
+                            class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li class="link_rede"><a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="link_rede"><a href="https://www.twitter.com/" target="_blank"><i
+                            class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  <!--Links JS Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  <script src="login.js"></script>
+</body>
+
+</html>
