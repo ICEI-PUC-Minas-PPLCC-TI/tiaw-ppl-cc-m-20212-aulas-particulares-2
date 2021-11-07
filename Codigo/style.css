@@ -1,8 +1,7 @@
 body{
-    max-height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  max-width: 100%;
+  top: 0px;
+  left: 0px;
     
 }
 
@@ -66,7 +65,7 @@ body{
     margin-top: 20px;
     background-image: linear-gradient(to top,#699ebd,#75b0d3);
     height: 100%;
-    padding: 100px;
+    padding: 70px;
 }
 
 .footer ul{
@@ -308,25 +307,37 @@ textarea{
 }
 /*Search final*/
 
-#number-client {
-  width: 49%;
-}
-#name-client {
-  width: 49%;
-}
-
-.div-client-name {
-  margin-top: 5px;
-  float: right;
-  margin-right: 110px;
-}
-.div-client-number {
-  margin-top: 5px;
-  float: left;
-
-}
 
 .subjects h3 {
   margin-top: 65px;
 }
+
+#name-client {
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+#number-client {
+  display: inline-block;
+  text-align: center;
+}
+
+.nome-numero-element {
+  position: relative;
+  display: inline-block;
+  min-width: 50%;
+  margin-left: 30px;
+  margin-bottom: 8px;
+}
+
+
+
+@media (max-width: 770px){
+  #materias {
+    text-align: center;
+  }
+  .languages {
+    text-align: center;
+  }
 }
