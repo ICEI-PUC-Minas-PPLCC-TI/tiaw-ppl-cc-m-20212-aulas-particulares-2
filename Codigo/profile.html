@@ -335,26 +335,26 @@
                         <div class="col-12 col-sm-6">
                                 <p>
                                     <label for="Pnome"><strong>Nome: </strong></label>
-                                    <input type="text" name="Pnome" id="Pnome">
+                                    <input type="text" name="Pnome" id="Pnome" autocomplete="off">
                                 </p>
                                 <p>
                                     <label for="Pmaterias"><strong>Matérias: </strong></label>
-                                    <input type="text" name="Pmaterias" id="Pmaterias">
+                                    <input type="text" name="Pmaterias" id="Pmaterias" autocomplete="off">
                                 </p>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <p>
                                     <label for="Phorarios"><strong>Horários: </strong></label>
-                                    <input type="text" name="Phorarios" id="Phorarios">
+                                    <input type="text" name="Phorarios" id="Phorarios" autocomplete="off">
                                 </p>
                                 <p>
                                     <label for="PvalorCombinado"><strong>Valor Combinado: </strong></label>
-                                    <input type="text" name="PvalorCombinado" id="PvalorCombinado">
+                                    <input type="text" name="PvalorCombinado" id="PvalorCombinado" autocomplete="off">
                                 </p>
                             </div>
                         </div>
                         <p><label for="Panotacoes"><strong>Anotações:</strong></label></p>
-                        <input type="text" name="Panotacoes" id="Panotacoes">
+                        <input type="text" name="Panotacoes" id="Panotacoes" autocomplete="off">
                         <p class="PsalvaAluno"><input id="PsalvaAluno" type="button" value="Salvar"></p>
                     </form>
                 </div>
@@ -365,6 +365,7 @@
                 usuarioCorrente.alunos.push({'nome':Pnome.value,'horarios':Phorarios.value,'materias':Pmaterias.value,'valorCombinado':PvalorCombinado.value,'anotacoes':Panotacoes.value});
                 sessionStorage.setItem('usuarioCorrente',JSON.stringify(usuarioCorrente));
                 boxCadastro.innerHTML = '';
+                location.reload();
             };
             
         };
