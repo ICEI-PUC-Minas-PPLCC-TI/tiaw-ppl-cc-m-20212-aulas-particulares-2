@@ -63,8 +63,10 @@ function initLoginApp() {
         var userName = usuarioCorrente['nome'];
         userName = userName.split(' ')[0];
         document.getElementById('inscrever-perfil').innerText=(userName + `'s Profile`);
+        document.getElementById('inscrever-perfil').classList.add('logado');
         document.getElementById('show-login').href='#'
-        document.getElementById('show-login').innerText='Logout'
+        document.getElementById('show-login').classList.add('logado');
+        document.getElementById('show-login').innerText='Logout';
     }
 
     var usuariosJSON = localStorage.getItem('db_usuarios');
@@ -83,7 +85,7 @@ function loginUser(email, senha) {
     for (var i = 0; i < db_usuarios.length; i++) {
         var usuario = db_usuarios[i];
 
-        if (email == usuario.email && senha == usuario.senha) {
+        if (email.toLocaleLowerCase() == usuario.email.toLocaleLowerCase() && senha == usuario.senha) {
             usuarioCorrente = db_usuarios[i];
 
             sessionStorage.setItem('usuarioCorrente', JSON.stringify (usuarioCorrente));
@@ -98,7 +100,9 @@ function loginUser(email, senha) {
 
 function logoutUser () {
     sessionStorage.clear()
-    window.location = LOGIN_URL;
+    document.getElementById('inscrever-perfil').classList.add('logado');
+    document.getElementById('show-login').classList.add('logado');
+    window.location.href = 'index.html';
 }
 
 /*Calcular idade do usuário*/
@@ -140,13 +144,15 @@ function addUser (nome, estado, cidade, telefone, email, senha, experiencia) {
     let materia = [];
     let descricao = '';
     let avaliacao = 5;
+    let avaliacaoQuanti = 1;
     let papel = 'professor';
     let fotoPerfil = 'https://picsum.photos/id/237/200/300';
     let genero = pegaGenero();
-    let username = nome.replaceAll(' ','')+dataNascimento;
+    let username = nome.replaceAll(' ','')+newId.replaceAll('-','');
     let valorMin = 0.01;
     let valorMax = 999.99;
-    let usuario = { 'id': newId, 'nome': nome,'genero':genero,'idade': calcIdade(dataNascimento),'username':username, 'estado': estado, 'cidade': cidade,'dataNascimento':dataNascimento, 'telefone': telefone, 'materia':materia,'descricao':descricao, 'avaliacao':avaliacao, 'email': email, 'senha': senha,'papel':papel, 'experiencia':experiencia, 'fotoPerfil':fotoPerfil,'valorMin':valorMin,'valorMax':valorMax};
+    let alunos = [];
+    let usuario = { 'id': newId, 'nome': nome,'genero':genero,'idade': calcIdade(dataNascimento),'username':username, 'estado': estado, 'cidade': cidade,'dataNascimento':dataNascimento, 'telefone': telefone, 'materia':materia,'descricao':descricao, 'avaliacao':avaliacao, 'avaliacaoQuanti':avaliacaoQuanti, 'email': email, 'senha': senha,'papel':papel, 'experiencia':experiencia, 'fotoPerfil':fotoPerfil,'valorMin':valorMin,'valorMax':valorMax,'alunos':alunos};
    
     db_usuarios.push(usuario);
 

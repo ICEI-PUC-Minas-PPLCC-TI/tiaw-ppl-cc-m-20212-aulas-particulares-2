@@ -75,9 +75,9 @@
         <script>
           function exibeUsuarios() {
               let listaUsuarios = '';
-              for (i = 0; i < db_usuarios.usuarios.length; i++) {
-                  let usuario = db_usuarios.usuarios[i];
-                  listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.logio}</td><td>${usuario.email}</td></td>`;
+              for (i = 0; i < db_usuarios.length; i++) {
+                  let usuario = db_usuarios[i];
+                  listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.login}</td><td>${usuario.email}</td></td>`;
               }
               document.getElementById("table-usuarios").innerHTML = listaUsuarios;
           }
@@ -163,7 +163,7 @@
         </div>
     </div>
 
-    <section class="search-sec" style="background-image:url(../img/busca.jpg); opacity:0.8">
+    <section class="search-sec">
         <div class="container formulario">
           <div class="row">
             <div class="col-lg-12">
@@ -569,6 +569,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
   <script src="login.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

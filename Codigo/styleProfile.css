@@ -1,0 +1,117 @@
+.main{
+    overflow: hidden;
+}
+
+
+.main .Pinformacao #Papresentacao{
+    word-wrap:break-word;
+    background-color: #a8d9f5;
+    padding: 20px;
+    text-align: center;
+    font-weight:700;
+    font-size: 150%;
+    border-radius: 30px;
+    margin: 30px;
+}
+.main .Pinformacao #Papresentacao .PfotoPerfil{
+    max-width: 100%;
+    border-radius: 20px;
+}
+.main .Pinformacao #Papresentacao .Pusername{
+    font-weight:initial;
+    font-size:initial;
+    color: #818181;
+}
+
+.main .Pinformacao .Pdados{
+    word-wrap:break-word;
+    background-color: #a8d9f5;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 30px 20px 30px 20px;
+    height: calc(100% - 60px);
+}
+
+.main .Pinformacao .Pdados button{
+    float: right;
+    border-radius: 5px;
+    background-color: #70b7e4;
+    border: solid #5595b9;
+}
+
+.main .Pinformacao .Pdados button:hover{
+    background-color: #70accf;
+}
+.main .PmaisInfo{
+    margin-bottom: 30px;
+}
+
+.main .PmaisInfo .contato{
+    background-color: #a8d9f5;
+    margin: 10px 30px 10px 30px;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.main .PmaisInfo #PmateriasLecionadas{
+    background-color: #a8d9f5;
+    margin: 10px 30px 10px 30px;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.main #Pvalores{
+    background-color: #a8d9f5;
+    margin: 10px 30px 10px 30px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.main #alunos{
+    background-color: #a8d9f5;
+    margin: 10px 30px 10px 30px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.main #PcadastraAluno{
+    float: right;
+    border-radius: 5px;
+    background-color: #70b7e4;
+    border: solid #5595b9;
+}
+
+.main #PcadastraAluno:hover{
+    background-color: #70accf;
+}
+
+.main #alunos>p{
+    font-size:200%;
+    font-weight: bolder;
+}
+
+.main .PalunoBox{
+    background-color: #e2f4ff;
+    margin: 10px 30px 10px 30px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.main #PcadastroDeAluno{
+    background-color: #e2f4ff;
+    margin: 10px 30px 10px 30px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.main #PcadastroDeAluno input{
+    background-color: rgb(247, 241, 231);
+    border-radius: 5px;
+    max-width: 100%;
+}
+.main #PcadastroDeAluno .PsalvaAluno{
+    text-align: center;
+    size: 200%;
+}

@@ -450,6 +450,8 @@ textarea{
 .search-sec{
   width: 98%;
   padding: 2rem;
+  background-image:url(../img/buscar.jpg);
+  opacity:0.8;
 }
 
 @media (min-width: 992px){

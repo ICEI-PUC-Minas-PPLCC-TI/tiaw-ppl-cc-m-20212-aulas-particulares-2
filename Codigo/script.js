@@ -72,16 +72,18 @@ function criaUser(nome,genero,username,email,senha,papel,dataNascimento,estado,c
 {
     let newId = generateUUID ();
     dataNascimento = '30112000';
-    materia = [];
-    descricao = '';
+    materia = ['Matemática','Física','Português'];
+    descricao = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
     avaliacao = 5;
+    let avaliacaoQuanti = 1;
     papel = 'professor';
     fotoPerfil = 'https://picsum.photos/id/237/200/300';
     genero = 'masc';
-    username = nome.replace(' ','')+dataNascimento;
+    username = nome.replaceAll(' ','')+newId.replaceAll('-','');
     let valorMin = 0.01;
     let valorMax = 999.99;
-    let usuario = { 'id': newId, 'nome': nome,'genero':genero,'idade': calcIdade(dataNascimento),'username':username, 'estado': estado, 'cidade': cidade,'dataNascimento':dataNascimento, 'telefone': telefone, 'materia':materia,'descricao':descricao, 'avaliacao':avaliacao, 'email': email, 'senha': senha,'papel':papel, 'experiencia':experiencia, 'fotoPerfil':fotoPerfil,'valorMin':valorMin,'valorMax':valorMax};
+    let alunos = [];
+    let usuario = { 'id': newId, 'nome': nome,'genero':genero,'idade': calcIdade(dataNascimento),'username':username, 'estado': estado, 'cidade': cidade,'dataNascimento':dataNascimento, 'telefone': telefone, 'materia':materia,'descricao':descricao, 'avaliacao':avaliacao, 'avaliacaoQuanti':avaliacaoQuanti, 'email': email, 'senha': senha,'papel':papel, 'experiencia':experiencia, 'fotoPerfil':fotoPerfil,'valorMin':valorMin,'valorMax':valorMax,'alunos':alunos};
    
     db_usuarios.push(usuario);
 
@@ -157,5 +159,11 @@ for(let i=0; i<users.length;i++){
 -----------------------------------*/
 
 
-window.onload = () =>{}
+window.onload = () =>{
+    document.getElementById('inscrever-perfil').onclick = () =>{
+        if(document.getElementById('inscrever-perfil').classList.contains('logado')){
+            location.href = `profile.html?username=${usuarioCorrente.username}`;
+        }
+    };
+}
 
