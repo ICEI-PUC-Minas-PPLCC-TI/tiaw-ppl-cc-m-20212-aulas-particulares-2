@@ -394,7 +394,7 @@
         }
 
         document.getElementById('PsearchBar').onsubmit = (evento) =>{
-            location.href(`professores.html?search=${removeAcento(PsearchText.value)}`);
+            location.replace(`professores.html?search=${removeAcento(PsearchText.value)}`);
             evento.preventDefault();
         };
 
@@ -419,7 +419,7 @@
             while(i<db_usuarios.length){
                 if(db_usuarios[i].papel == 'professor' && filtraTermo(i)){
                     
-                    console.log(`O professor ${db_usuarios[i].nome} tem o valor ${termo}`);
+                    //console.log(`O professor ${db_usuarios[i].nome} tem o valor ${termo}`);
                     listaProfessores.innerHTML += `<div class="col professorApresentacao">
                         <div class="row">
                             <div class="col-12 col-sm-5 col-md-3 col-lg-3">
