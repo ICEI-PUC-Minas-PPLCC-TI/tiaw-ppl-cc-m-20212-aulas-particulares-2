@@ -145,7 +145,8 @@
 
 
     <main class="main">
-        <h4 class="Professores"> <style>
+        <h4 class="Professores">
+            <style>
             .Professores{
                 font-size: 2em;
                 text-align: center;
@@ -154,7 +155,14 @@
                 border-radius: 30px;
                 color: #145996;
             }
-            </style> Professores: </h4>
+            </style> Professores:
+        </h4>
+        <div class="PpesquisaBox">
+                <form id="PsearchBar">
+                    <input id="PsearchBtn" type="submit" value="Pesquisar">
+                    <input type="text" name="PsearchText" id="PsearchText" placeholder="Digite aqui">
+                </form>
+        </div>
         <input id="testButton" type="button" value="teste">
         <div id="listaProfessores">
             <p id="naoTem" style="margin-top: 50px; margin-bottom: 50px; font-size: 1.5em;"><strong>Sinto muito, ainda não há professores para mostrar nessa categoria.</strong></p>
@@ -201,6 +209,7 @@
         </div>
     </footer>
 
+    <!--Script de carregar todos os professores-->
     <script>
             /*Carrega os usuários do localStorage*/
             var db_usuarios = JSON.parse(localStorage.getItem('db_usuarios'));
@@ -220,59 +229,242 @@
                 testButton.style.display = 'none';
                 //document.querySelectorAll('#listaProfessores>p').style.display = 'none';
                 naoTem.style.display = 'none';
-                for (let i = 0; i < db_usuarios.length; i++) {
-                    db_usuarios[i].idade = calcIdade(db_usuarios[i].dataNascimento);
-                    if(db_usuarios[i].papel == 'professor')
-                    {
-                        listaProfessores.innerHTML += `<div class="col professorApresentacao">
-                            <div class="row">
-                                <div class="col-12 col-sm-5 col-md-3 col-lg-3">
-                                    <div class="fotoPerfil">
-                                        <img src="${db_usuarios[i].fotoPerfil}" alt="">
-                                        <p id="avaliacaoProfessor${i}"></p>
+                if(!location.href.includes('?search=')){
+                    for (let i = 0; i < db_usuarios.length; i++) {
+                        db_usuarios[i].idade = calcIdade(db_usuarios[i].dataNascimento);
+                        if(db_usuarios[i].papel == 'professor')
+                        {
+                            listaProfessores.innerHTML += `<div class="col professorApresentacao">
+                                <div class="row">
+                                    <div class="col-12 col-sm-5 col-md-3 col-lg-3">
+                                        <div class="fotoPerfil">
+                                            <img src="${db_usuarios[i].fotoPerfil}" alt="">
+                                            <p id="avaliacaoProfessor${i}"></p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-sm-7 col-md-5 col-lg-5">
-                                    <div class="descricaoProfessor">
-                                        <h3 class="nomeProfessor">${db_usuarios[i].nome}</h3>
-                                        <p><small>Professor particular - ${+db_usuarios[i].experiencia} anos de expêriência</small></p>
-                                        <div class="row">
-                                            <div class="col-12 col-sm-6">
-                                                <div class="materiasLecionadas">
-                                                    <div id="materiasLecionadas${i}">
-                                                        <p><strong>Matérias:</strong></p>
+                                    <div class="col-12 col-sm-7 col-md-5 col-lg-5">
+                                        <div class="descricaoProfessor">
+                                            <h3 class="nomeProfessor">${db_usuarios[i].nome}</h3>
+                                            <p><small>Professor particular - ${+db_usuarios[i].experiencia} anos de expêriência</small></p>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="materiasLecionadas">
+                                                        <div id="materiasLecionadas${i}">
+                                                            <p><strong>Matérias:</strong></p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12 col-sm-6">
-                                                <div class="regiaoLecionada">
-                                                    <p>${db_usuarios[i].cidade}</p>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="regiaoLecionada">
+                                                        <p>${db_usuarios[i].cidade}</p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                        <div class="valorAula">
+                                            <p><strong>De R$${db_usuarios[i].valorMin} até R$${db_usuarios[i].valorMax}</strong></p>
+                                            <p>Disponível</p>
+                                            <a class="btn btn-primary contratar" alt="perfilprofessor.html?id=${db_usuarios[i].id}" href="perfilprofessor.html?id=${db_usuarios[i].id}" role="button">Contratar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="professorResumo">
+                                        <div class="col-12">
+                                            <p>${db_usuarios[i].descricao}</p>
+                                        </div>                       
+                                    </div>
+                                </div>
+                            </div>`;
+                        }
+                        else
+                        {
+                            console.log(db_usuarios[i].papel);
+                        }
+                        /*Cria a lista com as matérias*/
+                        let materiaAlvo = document.getElementById(`materiasLecionadas${i}`);
+                        if (materiaAlvo != null)
+                            for (let ind = 0; ind < db_usuarios[i].materia.length; ind++) {
+                                materiaAlvo.innerHTML += `<p>${db_usuarios[i].materia[ind]}</p>`;
+                            }
+                        /*---------------------------*/
+                        
+                        /*-Atualiza as avaliações-*/
+                        let avaliaAlvo = document.getElementById(`avaliacaoProfessor${i}`);
+                        let aval = db_usuarios[i].avaliacao/db_usuarios[i].avaliacaoQuanti;
+                        if(avaliaAlvo != null){
+                            if(aval==0){
+                                for(let i=0;i<5;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
+                            }
+                            else if(aval<=0.5){
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                                for(let i=0;i<4;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
+                            }
+                            else if(aval<=1){
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                for(let i=0;i<4;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
+                            }
+                            else if(aval<=1.5){
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                                for(let i=0;i<3;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
+                            }
+                            else if(aval<=2){
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                for(let i=0;i<3;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
+                            }
+                            else if(aval<=2.5){
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                                for(let i=0;i<2;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
+                            }
+                            else if(aval<=3){
+                                for(let i=0;i<3;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                for(let i=0;i<2;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
+                                
+                            }
+                            else if(aval<=3.5){
+                                for(let i=0;i<3;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
+
+                            }
+                            else if(aval<=4){
+                                for(let i=0;i<4;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
+                            }
+                            else if(aval<=4.5){
+                                for(let i=0;i<4;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                            }
+                            else if(aval<=5){
+                                for(let i=0;i<5;i++)
+                                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
+                            }
+                        }
+                        /*------------------------*/
+                    }
+                }
+
+
+            }
+
+/*-----------------------------------*/
+    </script>
+
+    <!--Links JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+
+
+    <!--Script de pesquisa-->
+    <script>
+
+        function removeAcento(frase){
+            comAcento = 'áãâàéèêíìîóòôõúùûü';
+            semAcento = 'aaaaeeeiiioooouuuu';
+            let novaFrase = '';
+            for(i = 0;i<frase.length;i++){
+                if(comAcento.includes(frase[i])){
+                    novaFrase += frase[i].replace(comAcento[comAcento.indexOf(frase[i])],semAcento[comAcento.indexOf(frase[i])]);
+                }
+                else{
+                    novaFrase+=frase[i];
+                }                
+            }
+            return novaFrase;
+        }
+
+        document.getElementById('PsearchBar').onsubmit = (evento) =>{
+            location.href(`professores.html?search=${removeAcento(PsearchText.value)}`);
+            evento.preventDefault();
+        };
+
+        function filtraTermo(i){
+            let termo = location.href.split('?search=')[1];
+            let chaves = Object.keys(db_usuarios[i]);
+            for(j = 0;j<chaves.length;j++){
+                if(chaves[j]!='id' && (typeof(db_usuarios[i][chaves[j]])== 'string' || typeof(db_usuarios[i][chaves[j]])== 'number'|| typeof(db_usuarios[i][chaves[j]])== 'object')){
+                    let valorArmazen = removeAcento(''+db_usuarios[i][chaves[j]]).toLocaleLowerCase();
+                    //console.log(valorArmazen);
+                    if(valorArmazen.includes(termo.toLocaleLowerCase())){
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        if(location.href.includes('?search=')){
+            let termo = location.href.split('?search=')[1];
+            let i = 0;
+            while(i<db_usuarios.length){
+                if(db_usuarios[i].papel == 'professor' && filtraTermo(i)){
+                    
+                    console.log(`O professor ${db_usuarios[i].nome} tem o valor ${termo}`);
+                    listaProfessores.innerHTML += `<div class="col professorApresentacao">
+                        <div class="row">
+                            <div class="col-12 col-sm-5 col-md-3 col-lg-3">
+                                <div class="fotoPerfil">
+                                    <img src="${db_usuarios[i].fotoPerfil}" alt="">
+                                    <p id="avaliacaoProfessor${i}"></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-7 col-md-5 col-lg-5">
+                                <div class="descricaoProfessor">
+                                    <h3 class="nomeProfessor">${db_usuarios[i].nome}</h3>
+                                    <p><small>Professor particular - ${+db_usuarios[i].experiencia} anos de expêriência</small></p>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="materiasLecionadas">
+                                                <div id="materiasLecionadas${i}">
+                                                    <p><strong>Matérias:</strong></p>
                                                 </div>
                                             </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                                    <div class="valorAula">
-                                        <p><strong>De R$${db_usuarios[i].valorMin} até R$${db_usuarios[i].valorMax}</strong></p>
-                                        <p>Disponível</p>
-                                        <a class="btn btn-primary contratar" alt="perfilprofessor.html?id=${db_usuarios[i].id}" href="perfilprofessor.html?id=${db_usuarios[i].id}" role="button">Contratar</a>
-                                    </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="regiaoLecionada">
+                                                <p>${db_usuarios[i].cidade}</p>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="professorResumo">
-                                    <div class="col-12">
-                                        <p>${db_usuarios[i].descricao}</p>
-                                    </div>                       
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="valorAula">
+                                    <p><strong>De R$${db_usuarios[i].valorMin} até R$${db_usuarios[i].valorMax}</strong></p>
+                                    <p>Disponível</p>
+                                    <a class="btn btn-primary contratar" alt="perfilprofessor.html?id=${db_usuarios[i].id}" href="perfilprofessor.html?id=${db_usuarios[i].id}" role="button">Contratar</a>
                                 </div>
                             </div>
-                        </div>`;
-                    }
-                    else
-                    {
-                        console.log(db_usuarios[i].papel);
-                    }
+                        </div>
+                        <div class="row">
+                            <div class="professorResumo">
+                                <div class="col-12">
+                                    <p>${db_usuarios[i].descricao}</p>
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>`;
+ 
                     /*Cria a lista com as matérias*/
                     let materiaAlvo = document.getElementById(`materiasLecionadas${i}`);
                     if (materiaAlvo != null)
@@ -347,18 +539,10 @@
                         }
                     }
                     /*------------------------*/
-                    
-
-
                 }
+                i++;
             }
-/*-----------------------------------*/
+        }
     </script>
-    <!--Links JS Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="login.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
