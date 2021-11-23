@@ -378,7 +378,7 @@
     <!--Script de pesquisa-->
     <script>
 
-        function removeAcento(frase){
+        /*function removeAcento(frase){
             comAcento = 'áãâàéèêíìîóòôõúùûü';
             semAcento = 'aaaaeeeiiioooouuuu';
             let novaFrase = '';
@@ -391,7 +391,7 @@
                 }                
             }
             return novaFrase;
-        }
+        }*/
 
         document.getElementById('PsearchBar').onsubmit = (evento) =>{
             location.replace(`professores.html?search=${removeAcento(PsearchText.value)}`);

@@ -41,6 +41,23 @@ function Usuario()
 
 /*------------------*/
 
+/*Função que remove o acento*/
+function removeAcento(frase){
+    comAcento = 'áãâàéèêíìîóòôõúùûü';
+    semAcento = 'aaaaeeeiiioooouuuu';
+    let novaFrase = '';
+    for(i = 0;i<frase.length;i++){
+        if(comAcento.includes(frase[i])){
+            novaFrase += frase[i].replace(comAcento[comAcento.indexOf(frase[i])],semAcento[comAcento.indexOf(frase[i])]);
+        }
+        else{
+            novaFrase+=frase[i];
+        }                
+    }
+    return novaFrase;
+}
+/*--------------------------------------*/
+
 /*Calcular idade do usuário*/
 function calcIdade(data_nasc){
     let data = new Date();
@@ -79,7 +96,7 @@ function criaUser(nome,genero,username,email,senha,papel,dataNascimento,estado,c
     papel = 'professor';
     fotoPerfil = 'https://picsum.photos/id/237/200/300';
     genero = 'masc';
-    username = nome.replaceAll(' ','')+newId.replaceAll('-','');
+    username = removeAcento(nome.replaceAll(' ',''))+newId.replaceAll('-','');
     let valorMin = 0.01;
     let valorMax = 999.99;
     let alunos = [];

@@ -148,7 +148,7 @@ function addUser (nome, estado, cidade, telefone, email, senha, experiencia) {
     let papel = 'professor';
     let fotoPerfil = 'https://picsum.photos/id/237/200/300';
     let genero = pegaGenero();
-    let username = nome.replaceAll(' ','')+newId.replaceAll('-','');
+    let username = removeAcento(nome.replaceAll(' ',''))+newId.replaceAll('-','');
     let valorMin = 0.01;
     let valorMax = 999.99;
     let alunos = [];
