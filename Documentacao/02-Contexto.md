@@ -25,28 +25,28 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
   **Formação Educacional:** Fundamental, Médio ou Superior\
   **Renda Média:** Dependente dos pais(R$ 0,00 individual)
   
- * Profissionais em algum campo específico e que já tem emprego fixo, mas gostariam da possibilidade de uma renda extra alternativa.\
+ * Profissionais em algum campo específico e que já tem emprego fixo, mas gostariam da possibilidade de uma renda extra alternativa. <br> <br>
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:** 17-20\
   **Formação Educacional:** Ensino Médio \
   **Renda Média:** Dependente dos pais(R$ 0,00 individual)
   
- * Concurseiros que precisam de estudar matérias específicas cobradas nas provas de concurso ou outros processos seletivos em geral.\
+ * Concurseiros que precisam de estudar matérias específicas cobradas nas provas de concurso ou outros processos seletivos em geral. <br> <br>
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:**  A maioria dos concursos públicos exige idade mínima e máxima de 18 e 65 anos(18-65)\
   **Formação Educacional:** Ensino Médio ou Superior\
   **Renda Média:**  Superior a 1 salário mínimo
   
- * Pais com intenção de contratar um tutor de algum conhecimento específico para seus filhos, como inglês ou música, por exemplo.\
+ * Pais com intenção de contratar um tutor de algum conhecimento específico para seus filhos, como inglês ou música, por exemplo. <br> <br>
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:** Superior aos 20\
   **Formação Educacional:** Sem restrições\
   **Renda Média:**  Superior a 1 salário mínimo
   
- * Qualquer tipo de pessoa com intenção de aprender algo novo por conta própria, seja alguma ciência, instrumentos musicais, artes ou outros cursos de aprofundamento profissional.\
+ * Qualquer tipo de pessoa com intenção de aprender algo novo por conta própria, seja alguma ciência, instrumentos musicais, artes ou outros cursos de aprofundamento profissional. <br> <br>
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:** Engloba todas as idades\
@@ -54,29 +54,29 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
   **Renda Média:** Superior a 1 salário mínimo
   
 ### **Seção: Usuário Fornecedor de Serviço**
- * Alunos de ensino superior com conhecimento em alguma matéria e que precisam de um renda extra.\
+ * Alunos de ensino superior com conhecimento em alguma matéria e que precisam de um renda extra. <br> <br>
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:** 18-25\
   **Formação Educacional:** Ensino Superior Incompleto\
   **Renda Média:** Sem renda fixa\
-  **Motivação: Financeira:** Financeira
+  **Motivação:** Financeira
   
- * Profissionais em algum campo específico e que já tem emprego fixo, mas gostariam da possibilidade de uma renda extra alternativa.\
+ * Profissionais em algum campo específico e que já tem emprego fixo, mas gostariam da possibilidade de uma renda extra alternativa. <br> <br>
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:** 21-65\
   **Formação Educacional:** Ensino Superior\
   **Renda Média:** Superior a 1 salário mínimo\
-  **Motivação: Financeira:** Financeira
+  **Motivação:** Financeira
   
- * Tutores full-time que tem as aulas particulares como sua principal fonte de renda.\
+ * Tutores full-time que tem as aulas particulares como sua principal fonte de renda. <br> <br>
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:** 21-65\
   **Formação Educacional:** Ensino Superior\
   **Renda Média:** Superior a 1 salário mínimo\
-  **Motivação: Financeira:** Financeira
+  **Motivação:** Financeira
 
 
 ## Justificativa
