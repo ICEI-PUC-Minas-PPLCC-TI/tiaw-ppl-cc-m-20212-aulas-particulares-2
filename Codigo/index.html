@@ -10,6 +10,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="login.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styledark.css">
 	<title>PAPO - Plataforma de Aulas Particulares Online</title>
 </head>
 
@@ -48,7 +49,7 @@
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="sobrenos.html">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="team.html">Nosso time</a>
@@ -62,9 +63,15 @@
                         <li class="nav-item">
                             <a class="nav-link" id="show-login" href="#">Login</a>
                         </li>
-                        <a rel="sidebar" href="#">
-                            <img id="estrela" src="img/estrela.png" width="21"
-                                height="19"></a>
+                        <li>
+                            <img id="estrela" src="https://repetit.ru/img/star_add_to_favourites.png" width="21" height="19">
+                        </li>
+                        <li>
+                            <div class="toggle">
+                                <input id="Cswitch" type="checkbox" name="theme">
+                                <label id="darkModeToggle"  for="Cswitch">Toggle</label>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -163,7 +170,7 @@
         </div>
     </div>
 
-    <section class="search-sec">
+    <section class="search-sec" style="background-image:url(../img/buscar.jpg); opacity:0.8">
         <div class="container formulario">
           <div class="row">
             <div class="col-lg-12">
@@ -172,7 +179,7 @@
                 <div class="row" >
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <div id="escolha">
-                            <select style=" opacity: 0.8;" class="form-control search-slt select">
+                            <select id="Cmaterias" style=" opacity: 0.8;" class="form-control search-slt select">
                                 <option>Escolha uma matéria</option>
                                 <option>Matemática</option>
                                 <option>Física</option>
@@ -198,7 +205,7 @@
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-12">
                       <div class="cidade">
-                          <select style=" opacity: 0.8;"  class="form-control search-slt select">
+                          <select id="Clocalizacao" style=" opacity: 0.8;"  class="form-control search-slt select">
                               <option>Sua localização</option>
                               <option>Acre</option>
                               <option>Alagoas</option>
@@ -240,7 +247,7 @@
 
                     <div class="col-lg-2 col-md-2 col-sm-12">
                         <div id="escolha">
-                          <button class="btn btn-primary btn-lg enabled" id="submitButton" type="submit">Procurar</button>
+                          <button id="Cpesquisar" class="btn btn-primary btn-lg enabled">Procurar</button>
                         </div>
                       
                     </div>
@@ -267,14 +274,14 @@
                     <img id="estrela"
                         src="img/matematica.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=matematica" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Matemática</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 not-hide">
                 <a rel="sidebar" href="#">
                     <img id="estrela" src="img/portugues.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=portugues" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Português</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 not-hide">
@@ -282,7 +289,7 @@
                     <img id="estrela"
                         src="img/historia.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=historia" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">História</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 not-hide">
@@ -296,7 +303,7 @@
                 <a rel="sidebar" href="#">
                     <img id="estrela" src="img/literatura.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=literatura" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Literatura</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
@@ -304,21 +311,21 @@
                     <img id="estrela"
                         src="img/geografia.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=geografia" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Geografia</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <a rel="sidebar" href="#">
                     <img id="estrela" src="img/quimica.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=quimica" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Química</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <a rel="sidebar" href="#">
                     <img id="estrela" src="img/redacao.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=redacao" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Redação</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
@@ -326,14 +333,14 @@
                     <img id="estrela"
                         src="img/filosofia.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=filosofia" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Filosofia</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <a rel="sidebar" href="#">
                     <img id="estrela" src="img/biologia.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=biologia" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Biologia</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
@@ -341,7 +348,7 @@
                     <img id="estrela"
                         src="img/programacao.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=programacao" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Programação</a>
             </div>
 
@@ -358,28 +365,28 @@
                 <a rel="sidebar" href="#">
                     <img id="estrela" src="img/ingles.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=ingles" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50% ;">Inglês</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 not-hide">
                 <a rel="sidebar" href="#">
                     <img id="estrela" src="img/espanhol.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=espanhol" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Espanhol</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 not-hide">
                 <a rel="sidebar" href="#">
                     <img id="estrela" src="img/frances.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=frances" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Francês</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 not-hide">
                 <a rel="sidebar" href="#">
                     <img id="estrela" src="img/alemao.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=alemao" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Alemão</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
@@ -387,7 +394,7 @@
                     <img id="estrela"
                         src="img/italiano.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=italiano" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Italiano</a>
             </div>
 
@@ -404,7 +411,7 @@
                     <img id="estrela"
                         src="img/musica.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=musica" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Música</a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 not-hide">
@@ -412,7 +419,7 @@
                     <img id="estrela"
                         src="img/desenho.png"
                         width="50" height="48"></a>
-                <a href="#" class="a-btn btn subject-btn"
+                <a href="professores.html?search=desenho" class="a-btn btn subject-btn"
                     style="padding:5px; border:2px solid white; width: 50%">Desenho</a>
             </div>
 
@@ -429,7 +436,7 @@
 
 <div class="tutor">
     <div class="container">
-        <h2>Maneiras de encontrar seu professor</h2><br>
+        <h2 class="formas">Maneiras de encontrar seu professor</h2><br>
         
         
         
@@ -440,11 +447,11 @@
                 </div>
                 
                 <img src="img/parte1.png">
-                <p>Encontre um professor no nosso site</p>
+                <p class="prof">Encontre um professor no nosso site</p>
                 <img src="img/parte2.png">
-                <p>Faça sua aplicação e preencha o formulário</p>
+                <p class="prof">Faça sua aplicação e preencha o formulário</p>
                 <img src="img/parte3.png">
-                <p>Iremos te contatar em 15 minutos</p>
+                <p class="prof">Iremos te contatar em 15 minutos</p>
                 <button class="button">Encontrar professor</button>
 
             </div>
@@ -454,9 +461,9 @@
                 </div>
                 
                 <img src="img/parte4.png">
-                <p>Envie um pedido para seleção de um professor</p>
+                <p class="prof">Envie um pedido para seleção de um professor</p>
                 <img src="img/parte5.png">
-                <p>Iremos te contatar em 15 minutos e encontrar o professor dos seus sonhos</p>
+                <p class="prof">Iremos te contatar em 15 minutos e encontrar o professor dos seus sonhos</p>
                 <button class="button">Encontre um professor para mim</button>
 
             </div>
@@ -570,6 +577,8 @@
       crossorigin="anonymous"></script>
   <script src="login.js"></script>
   <script src="script.js"></script>
+  <script src="Cpesquisa.js"></script>
+  <script src="darkmode.js"></script>
 </body>
 
 </html>

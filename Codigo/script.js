@@ -109,78 +109,17 @@ function criaUser(nome,genero,username,email,senha,papel,dataNascimento,estado,c
 
 
 
-
-/*Carrega os usuários do localStorage
-users = JSON.parse(localStorage.getItem('db_usuarios'));
-for(let i=0; i<users.length;i++){
-    //let i = indice;
-    //indice++;
-    
-    users[i].idade = calcIdade(users[i].data_nascimento);
-    listaProfessores.innerHTML+=`<div class="col professorApresentacao">
-        <div class="row">
-            <div class="col-12 col-sm-8 col-md-3 col-lg-3">
-                <div class="fotoPerfil">
-                    <img src="${users[i].fotoPerfil}" alt="">
-                    <p>Avaliação:</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 col-md-5 col-lg-5">
-                <div class="descricaoProfessor">
-                    <h3 class="nomeProfessor">${users[i].nome}</h3>
-                    <p><small>Professor particular - ${users[i].idade} anos de expêriência</small></p>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="materiasLecionadas">
-                                <ul id="materiasLecionadas${i}">
-                                    <p><strong>Matérias:</strong></p>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="regiaoLecionada">
-                                <p>${users[i].cidade}</p>
-                            </div>
-                        </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class="valorAula">
-                    <p><strong>De R$xxx,xx até R$xxx,xx</strong></p>
-                    <p>Disponível</p>
-                    <a class="btn btn-primary contratar" alt="perfilprofessor.html?id=${users[i].id}" href="perfilprofessor.html?id=${users[i].id}" role="button">Contratar</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="professorResumo">
-                <div class="col-12">
-                    <p>${users[i].descricao}</p>
-                </div>                       
-            </div>
-        </div>
-    </div>`;
-    
-    let teste = document.getElementById(`materiasLecionadas${i}`);
-    if(teste != null)
-        for(let ind=0; ind<users[i].materia.length; ind++)
-        {
-            teste.innerHTML+= `<p>${users[i].materia[ind]}</p>`;
-            console.log('Debug');
-        }
-    else
-        console.log('Não entrou');
-
-}
------------------------------------*/
-
-
 window.onload = () =>{
     document.getElementById('inscrever-perfil').onclick = () =>{
         if(document.getElementById('inscrever-perfil').classList.contains('logado')){
             location.href = `profile.html?username=${usuarioCorrente.username}`;
         }
     };
+
+    document.querySelector(".dropdown>.dropdown-menu").children[0].onclick = () =>{
+        if(document.querySelector(".dropdown>.dropdown-menu").children[0].classList.contains('logado')){
+            location.href = `profile.html?username=${usuarioCorrente.username}`;
+        }
+    }
 }
 

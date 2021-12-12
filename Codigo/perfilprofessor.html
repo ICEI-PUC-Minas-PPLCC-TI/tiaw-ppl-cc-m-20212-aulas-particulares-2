@@ -13,6 +13,8 @@
     <link href="login.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleProfile.css">
+    <link rel="stylesheet" href="styledark.css">
+
     <title>PAPO - Plataforma de Aulas Particulares Online</title>
 </head>
 <body>
@@ -49,7 +51,7 @@
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Sobre</a>
+                            <a class="nav-link" href="sobrenos.html">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="team.html">Nosso time</a>
@@ -63,9 +65,15 @@
                         <li class="nav-item">
                             <a class="nav-link" id="show-login" href="">Login</a>
                         </li>
-                        <a rel="sidebar" href="#">
-                            <img id="estrela" src="img/estrela.png" width="21"
-                                height="19"></a>
+                        <li>
+                            <img id="estrela" src="https://repetit.ru/img/star_add_to_favourites.png" width="21" height="19">
+                        </li>
+                        <li>
+                            <div class="toggle">
+                                <input id="Cswitch" type="checkbox" name="theme">
+                                <label id="darkModeToggle"  for="Cswitch">Toggle</label>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -393,5 +401,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="login.js"></script>
     <script src="script.js"></script>
+    <script src="darkmode.js"></script>
 </body>
 </html>

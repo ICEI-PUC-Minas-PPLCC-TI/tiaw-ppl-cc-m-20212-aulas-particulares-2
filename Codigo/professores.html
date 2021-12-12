@@ -14,6 +14,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="login.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styledark.css">
     <title>PAPO - Plataforma de Aulas Particulares Online</title>
 </head>
 <body>
@@ -50,7 +51,7 @@
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="sobrenos.html">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="team.html">Nosso time</a>
@@ -64,9 +65,15 @@
                         <li class="nav-item">
                             <a class="nav-link" id="show-login" href="">Login</a>
                         </li>
-                        <a rel="sidebar" href="#">
-                            <img id="estrela" src="img/estrela.png" width="21"
-                                height="19"></a>
+                        <li>
+                            <img id="estrela" src="https://repetit.ru/img/star_add_to_favourites.png" width="21" height="19">
+                        </li>
+                        <li>
+                            <div class="toggle">
+                                <input id="Cswitch" type="checkbox" name="theme">
+                                <label id="darkModeToggle"  for="Cswitch">Toggle</label>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -211,6 +218,24 @@
 
     <!--Script de carregar todos os professores-->
     <script>
+      function criaUserTeste(nome,genero,username,email,senha,papel,dataNascimento,estado,cidade,experiencia,telefone,materia,avaliacao,descricao,fotoPerfil)
+        {
+            let newId = generateUUID ();
+            
+            descricao = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+            avaliacao = 5;
+            let avaliacaoQuanti = 1;
+            
+            username = removeAcento(nome.replaceAll(' ',''))+newId.replaceAll('-','');
+            let valorMin = 0.01;
+            let valorMax = 999.99;
+            let alunos = [];
+            let usuario = { 'id': newId, 'nome': nome,'genero':genero,'idade': calcIdade(dataNascimento),'username':username, 'estado': estado, 'cidade': cidade,'dataNascimento':dataNascimento, 'telefone': telefone, 'materia':materia,'descricao':descricao, 'avaliacao':avaliacao, 'avaliacaoQuanti':avaliacaoQuanti, 'email': email, 'senha': senha,'papel':papel, 'experiencia':experiencia, 'fotoPerfil':fotoPerfil,'valorMin':valorMin,'valorMax':valorMax,'alunos':alunos};
+          
+            db_usuarios.push(usuario);
+
+            localStorage.setItem('db_usuarios', JSON.stringify (db_usuarios));
+        }
             /*Carrega os usuários do localStorage*/
             var db_usuarios = JSON.parse(localStorage.getItem('db_usuarios'));
             if(db_usuarios == null || db_usuarios.length == 0)
@@ -218,10 +243,11 @@
                 /*Carrega alguns usuários de teste se clicar no botão*/
                 testButton.style.display = 'block';
                 testButton.onclick = () =>{
-                    criaUser('Pedro Pampolini Mendicino','Masculino','Pamps','pmend25@email.com','admin','professor','30112000','Minas Gerais','Belo Horizonte','0002','31991817575',["matemática","física"],'5','teste descricao','https://picsum.photos/id/225/200/300');
-                    criaUser('Camila Machado Pires Maia','Feminino','kaka.belinha','camilaDeusa@email.com','admin','professor','22102000','Minas Gerais','Belo Horizonte','0003','3199342938',["matemática","física","biologia","redação"],'5','teste descricao','https://picsum.photos/id/237/200/300');
-                    criaUser('Gustavo Oliveira Rocha Gomes ','Masculino','gustavoIga','BM@email.com','admin','professor','05062000','Minas Gerais','Belo Horizonte','0010','7798705917',["matemática","física","português"],'5','teste descricao','https://picsum.photos/id/247/200/300');
-                    criaUser('Fulana de Tal','Feminino','MinimumVita','minium@email.com','admin','professor','01071970','Minas Gerais','Belo Horizonte','0012','31991817575',["matemática","física","quimica"],'3.4','teste descricao','https://picsum.photos/id/257/200/300');
+                  console.log('4');
+                    criaUserTeste('Pedro Pampolini Mendicino','Masculino','Pamps','pmend25@email.com','admin','professor','30112000','Minas Gerais','Belo Horizonte','0002','31991817575',["matemática","inglês"],'5','teste descricao','https://picsum.photos/id/225/200/300');
+                    criaUserTeste('Camila Machado Pires Maia','Feminino','kaka.belinha','camilaDeusa@email.com','admin','professor','22102000','Minas Gerais','Belo Horizonte','0003','3199342938',["matemática","física","biologia","desenho"],'5','teste descricao','https://picsum.photos/id/237/200/300');
+                    criaUserTeste('Gustavo Oliveira Rocha Gomes ','Masculino','gustavoIga','BM@email.com','admin','professor','05062000','Minas Gerais','Belo Horizonte','0010','7798705917',["matemática","inglês","português"],'5','teste descricao','https://picsum.photos/id/247/200/300');
+                    criaUserTeste('Fulana de Tal','Feminino','MinimumVita','minium@email.com','admin','professor','01071970','Minas Gerais','Belo Horizonte','0012','31991817575',["matemática","física","redação"],'3.4','teste descricao','https://picsum.photos/id/257/200/300');
                     location.reload();
                 }
             }
@@ -544,5 +570,6 @@
             }
         }
     </script>
+    <script src="darkmode.js"></script>
 </body>
 </html>

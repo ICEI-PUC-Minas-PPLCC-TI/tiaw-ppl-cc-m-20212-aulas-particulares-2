@@ -123,3 +123,58 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+#btnEditar {
+  text-decoration: none;
+  color: black;
+}
+
+#Enome {
+  width: 90%; 
+}
+
+#Edescricao, #Ematerias {
+  width: 98%;
+  height: 200px;
+  text-align: left;
+}
+
+#Eexperiencia, #Eestado {
+  width: 50px;
+}
+
+#Etelefone {
+  width: 150px;
+}
+
+#Emin, #Emax {
+  width: 70px;
+}
+
+#concluir {
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+.contato2 {
+  margin-bottom: 15px;
+}
+
+#btnApagar{
+    float: right;
+    border-radius: 5px;
+    background-color: #e47070;
+    border: solid #b95555;
+
+}
+
+#btnApagar:hover{
+    background-color: #cf7070;
+}
+
+
+.apagar {
+  float: right;
+  margin-right: 30px;
+}

@@ -66,6 +66,7 @@ function initLoginApp() {
         document.getElementById('inscrever-perfil').classList.add('logado');
         document.getElementById('show-login').href='#'
         document.getElementById('show-login').classList.add('logado');
+        document.querySelector(".dropdown>.dropdown-menu").children[0].classList.add('logado');        
         document.getElementById('show-login').innerText='Logout';
     }
 
@@ -100,8 +101,9 @@ function loginUser(email, senha) {
 
 function logoutUser () {
     sessionStorage.clear()
-    document.getElementById('inscrever-perfil').classList.add('logado');
-    document.getElementById('show-login').classList.add('logado');
+    document.getElementById('inscrever-perfil').classList.remove('logado');
+    document.getElementById('show-login').classList.remove('logado');
+    document.querySelector(".dropdown>.dropdown-menu").children[0].classList.remove('logado'); 
     window.location.href = 'index.html';
 }
 

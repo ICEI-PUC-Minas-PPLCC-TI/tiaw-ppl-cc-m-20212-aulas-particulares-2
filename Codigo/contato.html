@@ -9,8 +9,9 @@
   <link href="login.css" rel="stylesheet">
 	<link rel="stylesheet" href="contato.css">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styledark.css">
 	<title>Contato</title>
 </head>
 
@@ -49,7 +50,7 @@
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="sobrenos.html">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="team.html">Nosso time</a>
@@ -63,9 +64,15 @@
                         <li class="nav-item">
                             <a class="nav-link" id="show-login" href="#">Login</a>
                         </li>
-                        <a rel="sidebar" href="#">
-                            <img id="estrela" src="img/estrela.png" width="21"
-                                height="19"></a>
+                        <li>
+                            <img id="estrela" src="https://repetit.ru/img/star_add_to_favourites.png" width="21" height="19">
+                        </li>
+                        <li>
+                            <div class="toggle">
+                                <input id="Cswitch" type="checkbox" name="theme">
+                                <label id="darkModeToggle"  for="Cswitch">Toggle</label>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -272,6 +279,7 @@
     crossorigin="anonymous"></script>
 <script src="login.js"></script>
 <script src="script.js"></script>
+<script src="darkmode.js"></script>
 </body>
 
 </html>

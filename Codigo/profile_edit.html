@@ -176,8 +176,10 @@
                         <script>
                         Papresentacao.innerHTML = `
                         <p><img class="PfotoPerfil" src="${atualUser['fotoPerfil']}" alt=""></p>
-                        <p class="PnomeUsuario">${atualUser['nome']}</p>
-                        <p class="Pusername">@${atualUser['username']}</p>`;
+                
+                        <p class="PnomeUsuario"><input type="text" id="Enome" name="Enome" value="${atualUser['nome']}"></p>
+                        
+                        <p class="Pusername">@<input type="text" id="Eusername" name="Eusername" value="${atualUser['username']}"></p>`;
                     </script></div>
                 </div>
                 <div class="col-12 col-sm-8 col-md-9 col-lg-8">
@@ -187,7 +189,7 @@
                                 <script>
                                     Pdescricao.innerHTML=`
                                     <p><strong>Sobre:</strong><br>
-                                    ${atualUser.descricao}</p>`;
+                                    <textarea type="text" id="Edescricao" name="Edescricao">${atualUser.descricao}</textarea></p>`;
                                 </script>
                             </div>
                         </p>
@@ -195,7 +197,7 @@
                         <p id="Pexperiencia">
                             <script>
                                 Pexperiencia.innerHTML = `
-                                <p><strong>Experiência:<qstrong> ${+atualUser.experiencia} anos</p>`;
+                                <p><strong>Experiência:<qstrong><input type="text" id="Eexperiencia" name="Eexperiencia" value="${+atualUser.experiencia}"> anos</p>`;
                             </script>
                         </p>
                         <p id="Pnascimento">
@@ -206,10 +208,10 @@
                         </p>
                         <p id="Pcep">
                             <script>
-                                Pcep.innerHTML = `<strong>Estado: </strong>${atualUser.estado} <strong>Cidade: </strong>${atualUser.cidade}`;
+                                Pcep.innerHTML = `<strong>Estado: </strong><input type="text" id="Eestado" name="Eestado" value="${atualUser.estado}"> <strong>Cidade: </strong><input type="text" id="Ecidade" name="Ecidade" value="${atualUser.cidade}">`;
                             </script>
                         </p>
-                        <p><button><a id="btnEditar">Editar</a></button></p>
+                        <p><button id="concluir">Concluir</button></p>
                     </div>
                 </div>
             </div>
@@ -220,197 +222,38 @@
                     <div class="contato">
                         <p id="Ptelefone">
                             <script>
-                                Ptelefone.innerHTML = `<strong>Telefone: </strong> (${atualUser.telefone.substring(0,2)}) ${atualUser.telefone.substring(2)}`;
+                                Ptelefone.innerHTML = `<strong>Telefone: </strong> <input type="text" id="Etelefone" name="Etelefone" value="${atualUser.telefone}">`;
                             </script>
                         </p>
                         <p id="Pemail">
                             <script>
                                 Pemail.innerHTML = `
-                                <strong>Email: </strong> ${atualUser.email}`;
+                                <strong>Email: </strong> <input type="text" id="Eemail" name="Eemail" value="${atualUser.email}">`;
                             </script>
                         </p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
                     <div id="PmateriasLecionadas">
-                        <p><strong>Matérias: </strong></p>
+                      <script>
+                          PmateriasLecionadas.innerHTML = `
+                          <p><strong>Matérias: (Coloque as matérias separadas por vírgula) <textarea type="text" id="Ematerias" name="Ematerias" value="">${(atualUser.materia).join(",")}</textarea></strong></p>`;
+                       </script>
+                        
                     </div>
                 </div>
             </div>
         </div>
         <div id="Pvalores">
             <script>
-                Pvalores.innerHTML = `
-                <p><strong>Valores: </strong></p>
-                <p><strong>Valor Mínimo: </strong>R$${atualUser.valorMin} <strong>Valor Máximo: </strong>R$${atualUser.valorMax}</p>`;
+                Pvalores.innerHTML =
+                `<p><strong>Valores: </strong></p>
+                <p><strong>Valor Mínimo: </strong>R$<input type="text" id="Emin" name="Emin" value="${atualUser.valorMin}"> <strong>Valor Máximo: </strong>R$<input type="text" id="Emax" name="Emax" value="${atualUser.valorMax}"></p>`;
             </script>
         </div>
-
-        <div id="alunos">
-            <div class="row">
-                <div class="col-6"><p style="font-weight: bolder; font-size: 150%;"> Alunos:</p></div>
-                <div class="col-6"><button id="PcadastraAluno">Cadastrar Aluno</button></div>
-            </div>
-            
-            <div id="boxCadastro"></div>
-            <div id="PtodosAlunosBox">
-                
-            </div>
-        </div>
-        <div class="row apagar">
-          <p><button id="btnApagar">Apagar Conta</button></p>
-        </div>
-        
     </main>
 
-    <!--Script para atualizar as matérias e as avaliações-->
-    <script>
-        /*Cria a lista com as matérias*/
-        let materiaAlvo = document.getElementById(`PmateriasLecionadas`);
-        if (materiaAlvo != null)
-            for (let ind = 0; ind < atualUser.materia.length; ind++) {
-                materiaAlvo.innerHTML += `<p>${atualUser.materia[ind]}</p>`;
-            }
-        /*---------------------------*/
-        /*-Atualiza as avaliações-*/
-        let avaliaAlvo = document.getElementById(`Pavaliacao`);
-        let aval = atualUser.avaliacao/atualUser.avaliacaoQuanti;
-        if(avaliaAlvo != null){
-            if(aval==0){
-                for(let i=0;i<5;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
-            }
-            else if(aval<=0.5){
-                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
-                for(let i=0;i<4;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
-            }
-            else if(aval<=1){
-                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                for(let i=0;i<4;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
-            }
-            else if(aval<=1.5){
-                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
-                for(let i=0;i<3;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
-            }
-            else if(aval<=2){
-                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                for(let i=0;i<3;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
-            }
-            else if(aval<=2.5){
-                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
-                for(let i=0;i<2;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
-            }
-            else if(aval<=3){
-                for(let i=0;i<3;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                for(let i=0;i<2;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
-                
-            }
-            else if(aval<=3.5){
-                for(let i=0;i<3;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
-                avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
-
-            }
-            else if(aval<=4){
-                for(let i=0;i<4;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                avaliaAlvo.innerHTML+='<i class="fa fa-star-o" aria-hidden="true"></i>';
-            }
-            else if(aval<=4.5){
-                for(let i=0;i<4;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-                avaliaAlvo.innerHTML+='<i class="fa fa-star-half-o" aria-hidden="true"></i>';
-            }
-            else if(aval<=5){
-                for(let i=0;i<5;i++)
-                    avaliaAlvo.innerHTML+='<i class="fa fa-star" aria-hidden="true"></i>';
-            }
-        }
-        /*------------------------*/
-    </script>
-
-    <!--Script que adiciona os alunos que ele possui-->
-    <script>
-        PcadastraAluno.onclick = () =>{
-            boxCadastro.innerHTML = `
-            <div id="PcadastroDeAluno">
-                <form id="PformuCadastro">
-                    <div class="row">
-                        <div class="col-12 col-sm-6">
-                                <p>
-                                    <label for="Pnome"><strong>Nome: </strong></label>
-                                    <input type="text" name="Pnome" id="Pnome" autocomplete="off">
-                                </p>
-                                <p>
-                                    <label for="Pmaterias"><strong>Matérias: </strong></label>
-                                    <input type="text" name="Pmaterias" id="Pmaterias" autocomplete="off">
-                                </p>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <p>
-                                    <label for="Phorarios"><strong>Horários: </strong></label>
-                                    <input type="text" name="Phorarios" id="Phorarios" autocomplete="off">
-                                </p>
-                                <p>
-                                    <label for="PvalorCombinado"><strong>Valor Combinado: </strong></label>
-                                    <input type="text" name="PvalorCombinado" id="PvalorCombinado" autocomplete="off">
-                                </p>
-                            </div>
-                        </div>
-                        <p><label for="Panotacoes"><strong>Anotações:</strong></label></p>
-                        <input type="text" name="Panotacoes" id="Panotacoes" autocomplete="off">
-                        <p class="PsalvaAluno"><input id="PsalvaAluno" type="button" value="Salvar"></p>
-                    </form>
-                </div>
-            `;
-            document.getElementById('PsalvaAluno').onclick = () =>{
-                db_usuarios[userIndex].alunos.push({'nome':Pnome.value,'horarios':Phorarios.value,'materias':Pmaterias.value,'valorCombinado':PvalorCombinado.value,'anotacoes':Panotacoes.value});
-                localStorage.setItem('db_usuarios',JSON.stringify(db_usuarios));
-                usuarioCorrente.alunos.push({'nome':Pnome.value,'horarios':Phorarios.value,'materias':Pmaterias.value,'valorCombinado':PvalorCombinado.value,'anotacoes':Panotacoes.value});
-                sessionStorage.setItem('usuarioCorrente',JSON.stringify(usuarioCorrente));
-                boxCadastro.innerHTML = '';
-                location.reload();
-            };
-            
-        };
-
-    </script>
-
-    <!--Script Que Insere os alunos que existem-->
-    <script>
-        var usuarioCorrente = db_usuarios[userIndex];
-        
-        for(let i=0;i<usuarioCorrente.alunos.length;i++){
-            PtodosAlunosBox.innerHTML+=`
-            <div class="PalunoBox" id="aluno${i}">
-                <div class="row">
-                    <div class="col-12 col-sm-6">
-                        <p><strong>Nome: </strong>${usuarioCorrente.alunos[i]['nome']}</p>
-                        <p><strong>Matérias: </strong>${usuarioCorrente.alunos[i]['materias']}</p>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <p><strong>Horários: </strong>${usuarioCorrente.alunos[i]['horarios']}</p>
-                        <p><strong>Valor combinado: </strong>${usuarioCorrente.alunos[i]['valorCombinado']}</p>
-                    </div>
-                </div>
-                <p><strong>Anotações:</strong></p>
-                <p class="Panotacoes" id="Panotacoes1">${usuarioCorrente.alunos[i]['anotacoes']}</p>               
-            </div>`;
-        }
-
-    </script>
+ 
     <!--Rodapé-->
     <footer class="footer">
         <div class="row">
@@ -458,42 +301,41 @@
     <script src="login.js"></script>
     <script src="script.js"></script>
     <script src="profile_edit.js"></script>
+    <script>
+        function saveNewData(event) {
+            event.preventDefault();
+            if (Enome.value.length == 0 || Eusername.value.length == 0 || Edescricao.value.length == 0 || Eexperiencia.value.length == 0 || Ecidade.value.length == 0 || Eestado.value.length == 0 || Etelefone.value.length == 0 || Eemail.value.length == 0 || Emin.value.length == 0 || Emax.value.length == 0) {
+              alert("Você deve preencher todos os campos!");
+              return;
+            } else {
+              let nome = document.getElementById('Enome').value;
+              let username = document.getElementById('Eusername').value;
+              let descricao = document.getElementById('Edescricao').value;
+              let experiencia = document.getElementById('Eexperiencia').value;
+              let cidade = document.getElementById('Ecidade').value;
+              let estado = document.getElementById('Eestado').value;
+              let telefone = document.getElementById('Etelefone').value;
+              let email = document.getElementById('Eemail').value;
+              let min = document.getElementById('Emin').value;
+              let max = document.getElementById('Emax').value;
+              let materias = (document.getElementById('Ematerias').value).split(",");
+
+              changeUser(nome, username, descricao, experiencia, cidade, estado, telefone, email, min, max, materias);
+              alert('Entidade editada com sucesso! Encaminhando para a página de perfil...');
+            }
+          }  
+
+        document.getElementById('concluir').addEventListener('click', saveNewData);
+    </script>
+
+
+
     <!--Script de erro ao logar-->
     <script>
         if (!(urlUserName == usuarioCorrente["username"])) {
             document.querySelector(".main").innerHTML = `
             <p style="font-size:3em;"><strong>Ops! Parece que ocorreu um erro</strong></p>`;
         }
-    </script>
-    <script>
-      function deleteUser() {
-        usuarioCorrente = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
-        db_usuarios = JSON.parse(localStorage.getItem('db_usuarios'));
-
-        var userIndex = 0;
-        for (let i = 0; i < db_usuarios.length; i++) {
-            if(db_usuarios[i]['id'] == usuarioCorrente['id']){
-                userIndex = i;
-                break;
-            }
-        }
-        new_db_usuarios = [];
-        for (let i = 0; i < db_usuarios.length; i++) {
-            if(db_usuarios[i] != db_usuarios[userIndex]){
-                new_db_usuarios.push(db_usuarios[i]);
-            }
-        }
-
-        localStorage.clear();
-        localStorage.setItem('db_usuarios', JSON.stringify(new_db_usuarios));
-        sessionStorage.clear();
-        alert("Usuário deletado com sucesso")
-        window.location.href = "index.html";
-      }
-      
-      usuarioCorrenteHere = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
-      document.getElementById("btnEditar").href=`profile_edit.html?username=${usuarioCorrenteHere.username}`;
-      document.getElementById('btnApagar').addEventListener('click', deleteUser);
     </script>
     <script src="darkmode.js"></script>
 </body>
