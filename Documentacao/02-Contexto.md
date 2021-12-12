@@ -27,11 +27,11 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
 
 ### Seção: Usuário Consumidor
  * Alunos de ensino fundamental, médio e superior com déficit educacional ou que simplesmente  precisam de atenção e acompanhamento individual para obter êxito em suas atividades acadêmicas.\
-  Localização geográfica:\
-  Gênero: Masculino, Feminino, Outros\
-  Idade: Ensino Fundamental(06-14), Ensino Médio(15-18), Ensino Superior(18-25)\
-  Formação Educacional: Fundamental, Médio ou Superior\
-  Renda Média: Dependente dos pais(R$ 0,00 individual)\
+  **Localização geográfica:** Brasi\
+  **Gênero:** Masculino, Feminino, Outros\
+  **Idade:** Ensino Fundamental(06-14), Ensino Médio(15-18), Ensino Superior(18-25)\
+  **Formação Educacional:** Fundamental, Médio ou Superior\
+  **Renda Média:** Dependente dos pais(R$ 0,00 individual)
 
 
 
