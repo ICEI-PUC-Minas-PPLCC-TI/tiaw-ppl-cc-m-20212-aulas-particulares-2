@@ -27,12 +27,39 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
 
 ### Seção: Usuário Consumidor
  * Alunos de ensino fundamental, médio e superior com déficit educacional ou que simplesmente  precisam de atenção e acompanhamento individual para obter êxito em suas atividades acadêmicas.\
-  **Localização geográfica:** Brasi\
+  **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:** Ensino Fundamental(06-14), Ensino Médio(15-18), Ensino Superior(18-25)\
   **Formação Educacional:** Fundamental, Médio ou Superior\
   **Renda Média:** Dependente dos pais(R$ 0,00 individual)
-
+  
+ * Profissionais em algum campo específico e que já tem emprego fixo, mas gostariam da possibilidade de uma renda extra alternativa.\
+  **Localização geográfica:** Brasil\
+  **Gênero:** Masculino, Feminino, Outros\
+  **Idade:** 17-20\
+  **Formação Educacional:** Ensino Médio \
+  **Renda Média:** Dependente dos pais(R$ 0,00 individual)
+  
+ * Concurseiros que precisam de estudar matérias específicas cobradas nas provas de concurso ou outros processos seletivos em geral\
+  **Localização geográfica:** Brasil\
+  **Gênero:** Masculino, Feminino, Outros\
+  **Idade:**  A maioria dos concursos públicos exige idade mínima e máxima de 18 e 65 anos(18-65)\
+  **Formação Educacional:** Ensino Médio ou Superior\
+  **Renda Média:**  Superior a 1 salário mínimo
+  
+ * Pais com intenção de contratar um tutor de algum conhecimento específico para seus filhos, como inglês ou música, por exemplo\
+  **Localização geográfica:** Brasil\
+  **Gênero:** Masculino, Feminino, Outros\
+  **Idade:** Superior aos 20\
+  **Formação Educacional:** Sem restrições\
+  **Renda Média:**  Superior a 1 salário mínimo
+  
+ * Qualquer tipo de pessoa com intenção de aprender algo novo por conta própria, seja alguma ciência, instrumentos musicais, artes ou outros cursos de aprofundamento profissional.\
+  **Localização geográfica:** Brasil\
+  **Gênero:** Masculino, Feminino, Outros\
+  **Idade:** Engloba todas as idades\
+  **Formação Educacional:** Sem restrições\
+  **Renda Média:** Superior a 1 salário mínimo
 
 
 ## Justificativa
