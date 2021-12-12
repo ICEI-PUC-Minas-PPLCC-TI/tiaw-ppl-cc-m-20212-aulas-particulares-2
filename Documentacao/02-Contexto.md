@@ -26,12 +26,12 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
 ## Público-Alvo
 
 ### Seção: Usuário Consumidor
- #### Alunos de ensino fundamental, médio e superior com déficit educacional ou que simplesmente  precisam de atenção e acompanhamento individual para obter êxito em suas atividades acadêmicas. 
- - Localização geográfica: Brasil
- - Gênero: Masculino, Feminino, Outros
- - Idade: Ensino Fundamental(06-14), Ensino Médio(15-18), Ensino Superior(18-25)
- - Formação Educacional: Fundamental, Médio ou Superior
- - Renda Média: Dependente dos pais(R$ 0,00 individual)
+ * Alunos de ensino fundamental, médio e superior com déficit educacional ou que simplesmente  precisam de atenção e acompanhamento individual para obter êxito em suas atividades acadêmicas. 
+  * Localização geográfica: Brasil
+  * Gênero: Masculino, Feminino, Outros
+  * Idade: Ensino Fundamental(06-14), Ensino Médio(15-18), Ensino Superior(18-25)
+  * Formação Educacional: Fundamental, Médio ou Superior
+  * Renda Média: Dependente dos pais(R$ 0,00 individual)
 
 
 
