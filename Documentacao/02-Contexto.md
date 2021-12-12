@@ -23,6 +23,19 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
 - Professores particulares que buscam uma fonte de renda temporária ou fixa através de aulas online em horários flexíveis. Na maioria dos casos, professores full-time, ou graduandos que buscam de uma renda temporária para se manterem durante os estudos, que têm dificuldade em encontrar alunos dispostos a pagar pelas aulas.
 
 
+## Público-Alvo
+
+    ## Seção - Usuário Consumidor
+
+        * Alunos de ensino fundamental, médio e superior com déficit educacional ou que simplesmente  precisam de atenção e acompanhamento individual para obter êxito em suas atividades acadêmicas. 
+        * Localização geográfica: Brasil
+        * Gênero: Masculino, Feminino, Outros
+        * Idade: Ensino Fundamental(06-14), Ensino Médio(15-18), Ensino Superior(18-25)
+        * Formação Educacional: Fundamental, Médio ou Superior
+        * Renda Média: Dependente dos pais(R$ 0,00 individual)
+
+
+
 ## Justificativa
 
 O problema que esse projeto almeja resolver é bem específico e pontual, sendo assim, a solução apresentada pela plataforma deve andar pela mesma linha. Soluções simples e efetivas para problemas como esse geralmente são mais acatadas. Alguém que pesquisa por professores online não tem interesse em encontrar um site repleto de funcionalidades pedagógicas, caso o quisesse, o indivíduo em questão poderia simplesmente contratar qualquer serviço das dezenas de cursinhos online existentes hoje no Brasil.
