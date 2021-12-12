@@ -78,6 +78,7 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
   -**Renda Média:** Superior a 1 salário mínimo\
   -**Motivação:** Financeira
 
+### Para informações mais específicas através dos perfis de personas, clique [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/blob/master/Documentacao/01-DesignThinking/03-PersonasMapaEmpatia.md)
 
 ## Justificativa
 
