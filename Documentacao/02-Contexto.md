@@ -16,16 +16,16 @@ A plataforma não oferece nenhum tipo de conteúdo educativo ou pedagógico, seu
 Será possível buscar tutores por matéria ou conteúdo, como matemática ou funções, por exemplo. Também é possível que o aluno preencha um perfil e deixe com a staff do site todo o trabalho de encontrar um professor ideal. O foco é conectar as partes de forma rápida, eficiente e intuitiva.
 
 
+## Público-Alvo
+
+- Alunos com déficit educacional ou que buscam a ampliar seus horizontes, e que têm dificuldade em encontrar aulas particulares que supram suas necessidades, englobando as áreas do ensino fundamental, médio e superior.
+
+- Professores particulares que buscam uma fonte de renda temporária ou fixa através de aulas online em horários flexíveis. Na maioria dos casos, professores full-time, ou graduandos que buscam de uma renda temporária para se manterem durante os estudos, que têm dificuldade em encontrar alunos dispostos a pagar pelas aulas.
+
 
 ## Justificativa
 
 O problema que esse projeto almeja resolver é bem específico e pontual, sendo assim, a solução apresentada pela plataforma deve andar pela mesma linha. Soluções simples e efetivas para problemas como esse geralmente são mais acatadas. Alguém que pesquisa por professores online não tem interesse em encontrar um site repleto de funcionalidades pedagógicas, caso o quisesse, o indivíduo em questão poderia simplesmente contratar qualquer serviço das dezenas de cursinhos online existentes hoje no Brasil.
 
 O usuário que habita nosso nicho, quer encontrar um professor para ter assistência individual e contato humano, para isso, a única funcionalidade essencial é a de encontrar um professor por mecanismos rápidos de busca e suporte para conectá-los.
-
-## Público-Alvo
-
-- Alunos com déficit educacional ou que buscam a ampliar seus horizontes, e que têm dificuldade em encontrar aulas particulares que supram suas necessidades, englobando as áreas do ensino fundamental, médio e superior.
-
-- Professores particulares que buscam uma fonte de renda temporária ou fixa através de aulas online em horários flexíveis. Na maioria dos casos, professores full-time, ou graduandos que buscam de uma renda temporária para se manterem durante os estudos, que têm dificuldade em encontrar alunos dispostos a pagar pelas aulas.
 
