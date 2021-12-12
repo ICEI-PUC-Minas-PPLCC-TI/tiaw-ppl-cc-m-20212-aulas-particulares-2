@@ -17,15 +17,7 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
 
 
 ## Público-Alvo
-
-- Alunos com déficit educacional ou que buscam a ampliar seus horizontes, e que têm dificuldade em encontrar aulas particulares que supram suas necessidades, englobando as áreas do ensino fundamental, médio e superior.
-
-- Professores particulares que buscam uma fonte de renda temporária ou fixa através de aulas online em horários flexíveis. Na maioria dos casos, professores full-time, ou graduandos que buscam de uma renda temporária para se manterem durante os estudos, que têm dificuldade em encontrar alunos dispostos a pagar pelas aulas.
-
-
-## Público-Alvo
-
-### Seção: Usuário Consumidor
+### **Seção: Usuário Consumidor**
  * Alunos de ensino fundamental, médio e superior com déficit educacional ou que simplesmente  precisam de atenção e acompanhamento individual para obter êxito em suas atividades acadêmicas.\
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
@@ -40,14 +32,14 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
   **Formação Educacional:** Ensino Médio \
   **Renda Média:** Dependente dos pais(R$ 0,00 individual)
   
- * Concurseiros que precisam de estudar matérias específicas cobradas nas provas de concurso ou outros processos seletivos em geral\
+ * Concurseiros que precisam de estudar matérias específicas cobradas nas provas de concurso ou outros processos seletivos em geral.\
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:**  A maioria dos concursos públicos exige idade mínima e máxima de 18 e 65 anos(18-65)\
   **Formação Educacional:** Ensino Médio ou Superior\
   **Renda Média:**  Superior a 1 salário mínimo
   
- * Pais com intenção de contratar um tutor de algum conhecimento específico para seus filhos, como inglês ou música, por exemplo\
+ * Pais com intenção de contratar um tutor de algum conhecimento específico para seus filhos, como inglês ou música, por exemplo.\
   **Localização geográfica:** Brasil\
   **Gênero:** Masculino, Feminino, Outros\
   **Idade:** Superior aos 20\
@@ -60,6 +52,31 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
   **Idade:** Engloba todas as idades\
   **Formação Educacional:** Sem restrições\
   **Renda Média:** Superior a 1 salário mínimo
+  
+### **Seção: Usuário Fornecedor de Serviço**
+ * Alunos de ensino superior com conhecimento em alguma matéria e que precisam de um renda extra.\
+  **Localização geográfica:** Brasil\
+  **Gênero:** Masculino, Feminino, Outros\
+  **Idade:** 18-25\
+  **Formação Educacional:** Ensino Superior Incompleto\
+  **Renda Média:** Sem renda fixa\
+  **Motivação: Financeira:** Financeira
+  
+ * Profissionais em algum campo específico e que já tem emprego fixo, mas gostariam da possibilidade de uma renda extra alternativa.\
+  **Localização geográfica:** Brasil\
+  **Gênero:** Masculino, Feminino, Outros\
+  **Idade:** 21-65\
+  **Formação Educacional:** Ensino Superior\
+  **Renda Média:** Superior a 1 salário mínimo\
+  **Motivação: Financeira:** Financeira
+  
+ * Tutores full-time que tem as aulas particulares como sua principal fonte de renda.\
+  **Localização geográfica:** Brasil\
+  **Gênero:** Masculino, Feminino, Outros\
+  **Idade:** 21-65\
+  **Formação Educacional:** Ensino Superior\
+  **Renda Média:** Superior a 1 salário mínimo\
+  **Motivação: Financeira:** Financeira
 
 
 ## Justificativa
