@@ -70,7 +70,7 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
   **Renda Média:** Superior a 1 salário mínimo\
   **Motivação:** Financeira
   
- * Tutores full-time que tem as aulas particulares como sua principal fonte de renda. <br> <br>
+ * Tutores full-time que tem as aulas particulares como sua principal fonte de renda.\
   -**Localização geográfica:** Brasil\
   -**Gênero:** Masculino, Feminino, Outros\
   -**Idade:** 21-65\
