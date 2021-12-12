@@ -71,12 +71,12 @@ Será possível buscar tutores por matéria ou conteúdo, como matemática ou fu
   **Motivação:** Financeira
   
  * Tutores full-time que tem as aulas particulares como sua principal fonte de renda. <br> <br>
-  **Localização geográfica:** Brasil\
-  **Gênero:** Masculino, Feminino, Outros\
-  **Idade:** 21-65\
-  **Formação Educacional:** Ensino Superior\
-  **Renda Média:** Superior a 1 salário mínimo\
-  **Motivação:** Financeira
+  -**Localização geográfica:** Brasil\
+  -**Gênero:** Masculino, Feminino, Outros\
+  -**Idade:** 21-65\
+  -**Formação Educacional:** Ensino Superior\
+  -**Renda Média:** Superior a 1 salário mínimo\
+  -**Motivação:** Financeira
 
 
 ## Justificativa
