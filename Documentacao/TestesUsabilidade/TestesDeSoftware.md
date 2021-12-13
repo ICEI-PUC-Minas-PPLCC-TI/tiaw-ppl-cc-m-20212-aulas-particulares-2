@@ -62,8 +62,9 @@
 
 ## Funcionalidade de Cadastro de Aluno no Pefil do Professor
 
-| 1 | Perfil de Usuário | RF-19 | ⦁        Fazer login com o seu usuário<br> ⦁        entrar no seu perfil em (seu nome)’profiles<br> ⦁        Descer a página do seu perfil e ir em alunos, onde, caso seu usuário seja novo, não haverá nenhum aluno cadastrado, então clicar em cadastrar e digitar as informações do seu aluno e clicar em salvar, fazer esse processo quantas vezes forem necessárias | ⦁	Todos os alunos dever ser salvos e, mesmo fazendo logout e login novamente, aparecerem no seu perfil |
-
+| # | Cenário           | Requisito Funcional | Ações                                                                                                                                                                                                                                                                                                                                                            | Resultados Esperados                                                                                  |
+|---|-------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| 1 | Perfil de Usuário | RF-19               | ⦁        Fazer login com o seu usuário ⦁        entrar no seu perfil em (seu nome)’profiles ⦁        Descer a página do seu perfil e ir em alunos, onde, caso seu usuário seja novo, não haverá nenhum aluno cadastrado, então clicar em cadastrar e digitar as informações do seu aluno e clicar em salvar, fazer esse processo quantas vezes forem necessárias | ⦁	Todos os alunos dever ser salvos e, mesmo fazendo logout e login novamente, aparecerem no seu perfil |
 
 ## Funcionalidade de Dark Mode com JavaScript
 
