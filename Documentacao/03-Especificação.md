@@ -27,7 +27,7 @@
 | ID    | DESCRIÇÃO                                                                                                              | PRIORIDADE |
 |-------|------------------------------------------------------------------------------------------------------------------------|------------|
 | RF-00 | Funcionalidade de Cadastro e Login de usuário funcionais                                                               | ALTA       |
-| RF-01 | Visualização, edição e exclusão de perfil do usuário funcionais                                                        | ALTA       |
+| RF-01 | Visualização, edição e exclusão de perfil de usuário funcionais                                                        | ALTA       |
 | RF-02 | Busca de tutor por nome de usuário                                                                                     | ALTA       |
 | RF-03 | Busca de tutor por matérias de forma fácil e intuitiva, logo na página inicial do site                                 | ALTA       |
 | RF-04 | Busca de tutor por localização                                                                                         | ALTA       |
