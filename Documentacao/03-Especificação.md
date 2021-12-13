@@ -45,6 +45,7 @@
 | RF-16 | Oferecer suporte rápido aos clientes por número, e-mail ou whatsapp                                                    | BAIXA      |
 | RF-17 | Oferecer funcionalidade de Dark Mode                                                                                   | BAIXA      |
 | RF-18 | Template Padrão do site deve ter todas as páginas completamente responsivas e interativas                              | ALTA       |
+| RF-19 | Cadastro de alunos no perfil de professores                                                                            | MÉDIA      |
 <br>
 
 ## Requisitos Não Funcionais
