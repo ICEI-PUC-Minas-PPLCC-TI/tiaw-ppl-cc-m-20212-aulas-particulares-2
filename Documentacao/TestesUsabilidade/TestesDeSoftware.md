@@ -6,7 +6,7 @@
 - Site publicado na Internet
 - Navegador de Internet - Preferencialmente, Chrome, Edge ou Firefox
 
-###### Os testes a seguir tem como finalidade testar o funcionamento dos principais requisitos funcionais do projeto <br>
+##### Os testes a seguir tem como finalidade testar o funcionamento dos principais requisitos funcionais do projeto <br>
 
 ## Funcionalidade de Login do Sistema
 
