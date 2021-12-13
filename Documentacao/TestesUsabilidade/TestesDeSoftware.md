@@ -21,7 +21,7 @@
 | 7 | Controle de Sessão         | RF-00               | ⦁	Efetuar o login de um usuário cadastrado<br>  ⦁	Acessar as outras páginas da plataforma<br>  ⦁	Atualizar a página via refresh do browser (F5)                                                                     | ⦁        A página deve apresentar o nome do usuário logado logo após o processo de login e também após o refresh da página, além disso, a página também deve mostrar uma opção de logout.                                         |
 | 8 | Logout                     | RF-00               | ⦁	Efetuar o login de um usuário cadastrado<br>  ⦁	Acessar opção de logout em qualquer uma das páginas                                                                                                          | ⦁	Os dados do usuário corrente devem ser retirados no Session Storage<br>  ⦁	Após a confirmação do logout, o sistema deve deslogar o usuário da plataforma e retornar para a página principal.                                          |
 
-<br> 
+
 ## Funcionalidade Template da Página Principal
 
 | # | Cenário          | Requisito Funcional | Ações                                                                                                                                                                                                                           | Resultados Esperados                                                                                                 |
