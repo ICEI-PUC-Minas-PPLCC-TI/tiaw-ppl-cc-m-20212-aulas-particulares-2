@@ -60,6 +60,11 @@
 | 3 | Página de Professores Filtrada pela Pesquisa | RF-02, RF-04        | ⦁	Verificar se a pesquisa condiz com os resultados<br>   ⦁	Pesquisar por mais de um item, sendo um de cada vez, e ver quais aparecem e quais não aparecem resultados | ⦁	O filtro de pesquisa deve ser eficiente, mostrando professores que dão aula de matemática, por exemplo, quando pesquisar por matemática, e caso não tenha nenhum professor cadastrado da matéria, mostrar nenhum professor |
 
 
+## Funcionalidade de Cadastro de Aluno no Pefil do Professor
+
+| 1 | Perfil de Usuário | RF-19 | ⦁        Fazer login com o seu usuário<br> ⦁        entrar no seu perfil em (seu nome)’profiles<br> ⦁        Descer a página do seu perfil e ir em alunos, onde, caso seu usuário seja novo, não haverá nenhum aluno cadastrado, então clicar em cadastrar e digitar as informações do seu aluno e clicar em salvar, fazer esse processo quantas vezes forem necessárias | ⦁	Todos os alunos dever ser salvos e, mesmo fazendo logout e login novamente, aparecerem no seu perfil |
+
+
 ## Funcionalidade de Dark Mode com JavaScript
 
 | # | Cenário       | Requisito Funcional | Ações                                                                                                                | Resultados Esperados                                                                                                                                                   |
