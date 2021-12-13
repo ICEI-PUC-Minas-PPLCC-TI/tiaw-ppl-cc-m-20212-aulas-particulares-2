@@ -26,21 +26,24 @@
 
 | ID    | DESCRIÇÃO                                                                                                              | PRIORIDADE |
 |-------|------------------------------------------------------------------------------------------------------------------------|------------|
-| RF-01 | Busca de tutor por matéria e conteúdo através do menu de navegação                                                     | ALTA       |
-| RF-02 | Busca de tutor por matérias de forma fácil e intuitiva, logo na página inicial do site                                 | ALTA       |
-| RF-03 | Busca de tutor por localização                                                                                         | ALTA       |
-| RF-04 | Oferecer matérias de ensino médio e superior                                                                           | ALTA       |
-| RF-05 | Oferecer conteúdos paralelos à escola e universidade                                                                   | MÉDIA      |
-| RF-06 | Diferentes métodos para encontrar os tutores                                                                           | ALTA       |
-| RF-07 | Chatbot no canto inferior direito para auxiliar navegação no site                                                      | BAIXA      |
-| RF-08 | O usuário terá opção de escolher um tutor por conta própria                                                            | ALTA       |
-| RF-09 | O usuário terá opção de preencher uma caixa com seu perfil para que o próprio site entre em contato e indique um tutor | ALTA       |
-| RF-10 | Mostrar opções vastas de contato com o tutor, e plataformas que podem ser utilizadas, caso as aulas sejam onlines      | ALTA       |
-| RF-11 | Necessidade de identificação dos tutores por identidade, para garantir integridade de ambas as partes                  | MÉDIA      |
-| RF-12 | Sistema de avaliações e recomendações                                                                                  | ALTA       |
-| RF-13 | Critérios de permanência no site e banimento (número máximo de denúncias, por exemplo)                                 | MÉDIA      |
-| RF-14 | Carrossel com avaliações de clientes acima do rodapé do site                                                           | MÉDIA      |
-| RF-14 | Oferecer suporte rápido aos clientes por número, e-mail ou whatsapp                                                    | BAIXA      |
+| RF-00 | Funcionalidade de Cadastro e Login de usuário funcionais                                                               | ALTA       |
+| RF-01 | Visualização, edição e exclusão de perfil do usuário funcionais                                                        | ALTA       |
+| RF-02 | Busca de tutor por nome de usuário                                                                                     | ALTA       |
+| RF-03 | Busca de tutor por matérias de forma fácil e intuitiva, logo na página inicial do site                                 | ALTA       |
+| RF-04 | Busca de tutor por localização                                                                                         | ALTA       |
+| RF-05 | Oferecer matérias de ensino médio e superior                                                                           | ALTA       |
+| RF-06 | Oferecer conteúdos paralelos à escola e universidade                                                                   | MÉDIA      |
+| RF-07 | Diferentes métodos para encontrar os tutores                                                                           | ALTA       |
+| RF-08 | Chatbot no canto inferior direito para auxiliar navegação no site                                                      | BAIXA      |
+| RF-09 | O usuário terá opção de escolher um tutor por conta própria                                                            | ALTA       |
+| RF-10 | O usuário terá opção de preencher uma caixa com seu perfil para que o próprio site entre em contato e indique um tutor | ALTA       |
+| RF-11 | Mostrar opções vastas de contato com o tutor, e plataformas que podem ser utilizadas, caso as aulas sejam onlines      | ALTA       |
+| RF-12 | Necessidade de identificação dos tutores por identidade, para garantir integridade de ambas as partes                  | MÉDIA      |
+| RF-13 | Sistema de avaliações e recomendações                                                                                  | ALTA       |
+| RF-14 | Critérios de permanência no site e banimento (número máximo de denúncias, por exemplo)                                 | MÉDIA      |
+| RF-15 | Carrossel com avaliações de clientes acima do rodapé do site                                                           | MÉDIA      |
+| RF-16 | Oferecer suporte rápido aos clientes por número, e-mail ou whatsapp                                                    | BAIXA      |
+| RF-17 | Oferecer funcionalidade de Dark Mode                                                                                   | BAIXA      |
 <br>
 
 ## Requisitos Não Funcionais
