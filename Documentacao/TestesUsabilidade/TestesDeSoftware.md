@@ -60,7 +60,7 @@
 | 3 | Página de Professores Filtrada pela Pesquisa | RF-02, RF-04        | ⦁	Verificar se a pesquisa condiz com os resultados<br>   ⦁	Pesquisar por mais de um item, sendo um de cada vez, e ver quais aparecem e quais não aparecem resultados | ⦁	O filtro de pesquisa deve ser eficiente, mostrando professores que dão aula de matemática, por exemplo, quando pesquisar por matemática, e caso não tenha nenhum professor cadastrado da matéria, mostrar nenhum professor |
 
 
-## Funcionalidade de Cadastro de Aluno no Pefil do Professor
+## Funcionalidade de Cadastro de Aluno no Perfil do Professor
 
 | # | Cenário           | Requisito Funcional | Ações                                                                                                                                                                                                                                                                                                                                                            | Resultados Esperados                                                                                  |
 |---|-------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
