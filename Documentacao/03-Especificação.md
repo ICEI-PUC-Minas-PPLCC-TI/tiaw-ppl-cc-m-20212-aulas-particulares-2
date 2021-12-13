@@ -44,6 +44,7 @@
 | RF-15 | Carrossel com avaliações de clientes acima do rodapé do site                                                           | MÉDIA      |
 | RF-16 | Oferecer suporte rápido aos clientes por número, e-mail ou whatsapp                                                    | BAIXA      |
 | RF-17 | Oferecer funcionalidade de Dark Mode                                                                                   | BAIXA      |
+| RF-18 | Template Padrão do site deve ter todas as páginas completamente responsivas e interativas                              | ALTA       |
 <br>
 
 ## Requisitos Não Funcionais
