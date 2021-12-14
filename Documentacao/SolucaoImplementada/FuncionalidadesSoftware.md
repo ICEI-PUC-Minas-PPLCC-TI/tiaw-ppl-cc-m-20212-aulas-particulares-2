@@ -127,7 +127,22 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - profile.html <br> <br> <br>
 
 
+# Sprint 3 - Funcionalidade de Dark Mode com JavaScript
+### Ativa o DarkMode da página
+- Para ativar, basta clicar no botão swift no canto superior direito da página
+![dark1](https://user-images.githubusercontent.com/79855405/145937744-4bd8b397-1cb6-4bab-8ffc-b4fe1826a9fc.png) <br>
+![dark2](https://user-images.githubusercontent.com/79855405/145937765-04390801-6533-4352-9a18-fcc6d94616f2.png) <br>
 
+
+### Requisitos atendidos:
+- RF-17 <br>
+
+### Artefatos da Funcionalidade:
+- index.html
+- style.css
+- login.js
+- login.css 
+- darkmode.js <br> <br> <br>
 
 
 
