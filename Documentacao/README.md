@@ -1,8 +1,9 @@
 # DOCUMENTAÇÃO DO PROJETO
 ## A Documentação do projeto está dividida nas seguintes seções:
 
-- Artefatos do Design Thinking (Matriz CSD, Mapa de Stakeholders, Personas e Mapas de Empatia)
-- Contexto do projeto (Problema, Objetivo do projeto, Justificativa e Público-alvo)
-- Especificação do Projeto (Histórias de usuários, requisitos funcionais, requisitos não funcionais e restrições do projeto)
-- Metodologia (Estrutura, fluxo de trabalho no repositório do GitHub e quadro de controle de tarefas (Kanban))
-- Projeto de Interface (Fluxo do usuário, Wireframes das telas e Protótipo Interativo)
+- Artefatos do Design Thinking (Matriz CSD, mapa de stakeholders, personas, histórias de usuário e mapas de empatia)
+- Contexto do Projeto (Problema, objetivo do projeto, justificativa e público-alvo)
+- Projeto da Solução (Requisitos funcionais, requisitos não funcionais, restrições do projeto, projeto de interface(fluxo do site, wireframes e protótipo interativo), arquitetura e tecnologias)
+- Metodologia de Trabalho (Estrutura, fluxo de trabalho no repositório do GitHub, quadro de controle de tarefas (Kanban), processo, atribuições e ferramentas)
+- Solução Implementada (Template do site, funcionalidades de software)
+- Testes (Testes de software e usabilidade)
