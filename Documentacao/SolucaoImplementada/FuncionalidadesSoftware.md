@@ -17,5 +17,17 @@ Funcionalidade que permite a realização do login de um usuário cadastrado na 
 - Após logar com sucesso, você poderá ver um link para seu perfil pessoal
 ![cadastro 3](https://user-images.githubusercontent.com/79855405/145931393-fc1fb3dc-34a1-410b-b4f0-621972cde0f2.png) <br>
 
+### Requisitos atendidos:
+- RF-00 <br>
+
+### Artefatos da Funcionalidade:
+- index.html
+- style.css
+- cadastro.html
+- cadastro.css
+- login.js
+- login.css
+
+
 
 
