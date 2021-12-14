@@ -32,4 +32,20 @@
     - Busca de Perfis e Visualização de Perfil Pessoal - Responsável: Pedro Pampolini
     - Funcionalidades JavaScript (Dark Mode, Busca de Professor, Verificar Dados de Cadastro) - Responsável: Camila Machado
   - **Sprint 4**
-    - Finalização da documentação do Projeto - Responsáveis: Camila Machado, Gustavo Gomes e Pedro Pampolini
+    - Finalização da documentação do Projeto - Responsáveis: Camila Machado, Gustavo Gomes e Pedro Pampolini<br>
+
+## Ferramentas Utilizadas
+- Comunicação:
+  - Whatsapp - Para comunicação em geral no formato de texto
+  - Microsoft Teams - Para chamadas mais importantes realização da daily
+- Editor de Código:
+  - Visual Studio Code - Escolhido por ter uma integração com o Github, o que facilita a manipulçaão de branchs e o sistem de versão em geral
+  - Replit - Escolhido em determinados momentos para finalidades de teste pela rapidez em reproduzir o ambiente do projeto no navegador
+- Ferramenta de diagramação:
+  - Miro - Escolhido para ideação dos esquemas de arquitetura pela facilidade de manipulação de texto e imagem
+- Navegador:
+  - Chrome - Todo o desenvolvimento do projeto foi realizado no Chrome pela maor familiaridade com o navegador
+  - Firefox - Usado para teste
+  - Edge - Usado para teste
+- Gerenciamento de Projeto:  
+  - GitHub - Ambiente escolhido pela coveniência e pela proximidade com o ambiente de gestão de código 
