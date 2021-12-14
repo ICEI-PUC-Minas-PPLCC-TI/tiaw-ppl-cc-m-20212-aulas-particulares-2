@@ -21,15 +21,15 @@
 <br>
 
 ## Divisão de Papéis 
-  - Sprint 1
+  - **Sprint 1**
     - Elaboração da documentação inicial do projeto - Responsáveis: Camila Machado, Gustavo Gomes e Pedro Pampolini
-  - Sprint 2
+  - **Sprint 2**
     - Template Padrão do Site - Responsável: Camila Machado
     - Funcionalidade de Login do Sistema - Responsável: Gustavo Gomes
     - Funcionalidade de Apresentação de Informação - Responsável: Pedro Pampolini
-  - Sprint 3
+  - **Sprint 3**
     - Funcionalidade de Cadastro do Usuário - Responsável: Gustavo Gomes
     - Busca de Perfis e Visualização de Perfil Pessoal - Responsável: Pedro Pampolini
     - Funcionalidades JavaScript (Dark Mode, Busca de Professor, Verificar Dados de Cadastro) - Responsável: Camila Machado
-  - Sprint 4
+  - **Sprint 4**
     - Finalização da documentação do Projeto - Responsáveis: Camila Machado, Gustavo Gomes e Pedro Pampolini
