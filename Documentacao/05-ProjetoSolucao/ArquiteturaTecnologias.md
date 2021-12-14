@@ -21,4 +21,12 @@
  - HomePage -> Contato / Nosso Time
  - Homepage -> Login -> Perfil Pessoal -> Editar Perfil <br>
  
- ![FluxoUsuario](https://user-images.githubusercontent.com/79855405/145918355-e33ea92d-46b6-45fc-a704-0e98255d38ee.jpg)
+ ![FluxoUsuario](https://user-images.githubusercontent.com/79855405/145918355-e33ea92d-46b6-45fc-a704-0e98255d38ee.jpg)<br><br><br>
+ 
+ # Tecnologias Utilizadas
+ ### As principais tecnologias utilizadas no desenvolvimento do projeto foram:
+ - HTML5 / CSS3
+ - JavaScript
+ - Bootstrap v5.1.1
+ - API do Navegador / LocalStorage / Session Storage
+ - Arquivos JSON
