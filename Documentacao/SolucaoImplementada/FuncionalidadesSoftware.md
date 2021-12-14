@@ -1,7 +1,7 @@
 # Funcionalidades de Software
 
 Descrição com imagens de tela das principais funcionalidades de software do projeto e como utilizá-las.\
-Para visualizar os testes de software das mesmas funcionalidades que serão descritas a seguir, clique [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/blob/master/Documentacao/TestesUsabilidade/TestesDeSoftware.md)
+Para visualizar os testes de software das mesmas funcionalidades que serão descritas a seguir, clique [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/blob/master/Documentacao/TestesUsabilidade/TestesDeSoftware.md) <br>
 
 
 # Sprint 2 - Funcionalidade de Criação de Usuário e Login do Sistema
@@ -27,7 +27,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - cadastro.css
 - validaemail.js
 - login.js
-- login.css <br> <br>
+- login.css <br> <br> <br>
 
 # Sprint 2 - Funcionalidade de Visualização dos Perfis de Professores Cadastrados
 ### Funcionalidade que permite a visualização de uma lista com todos os professores cadastrados na plataforma
@@ -43,7 +43,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 ### Artefatos da Funcionalidade:
 - index.html
 - style.css
-- professores.html (JavaScript da página imbutido dentro do HTML) <br> <br>
+- professores.html (JavaScript da página imbutido dentro do HTML) <br> <br> <br>
 
 # Sprint 3 - Funcionalidade de Edição e Exclusão do Perfil de Usuário
 ### Funcionalidade que permite a edição e exclusão de um perfil pessoal cadastrado na plataforma
@@ -74,7 +74,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - login.css
 - profile.html
 - profile_edit.html
-- profile_edit.js <br>
+- profile_edit.js <br> <br> <br>
 
 
 
