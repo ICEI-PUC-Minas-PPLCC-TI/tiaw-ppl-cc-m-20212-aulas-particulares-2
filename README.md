@@ -17,4 +17,5 @@ Plataforma criada para suprir a necessidade de uma educação de reforço realiz
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Para acessar o conteúdo do projeto, é necessário o uso de um aperelho desktop ou mobile com acesso a internet por meio de um navegador. O link do site hospedado na internet por meio do Replit é o seguinte: [https://tiaw-final.gustavgomes.repl.co/](https://tiaw-final.gustavgomes.repl.co/). Após acessar o link, aprenda sobre todas as funcionalidades que são oferecidas e como usá-las [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/blob/master/Documentacao/SolucaoImplementada/FuncionalidadesSoftware.md).\
+Bem vindo ao PAPO!
