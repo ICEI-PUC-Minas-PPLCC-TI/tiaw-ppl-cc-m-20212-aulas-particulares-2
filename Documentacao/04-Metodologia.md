@@ -52,3 +52,6 @@
 
 
 ## Processo
+Para o processo de realização do trabalho, foi utilizada a metologia Scrum em paralelo com a organização das sprints num quadro kanban. O tempo de cada Sprint foi determinado pelos professores da matéria, que exerceram um papel análogo ao de Product Owner. O papel de Scrum Master foi revezado entre os integrantes do grupo, e devido ao tamanho ínfimo da equipe (3 membros), as decisões que seriam de responsabilidade do Scrum Master eram muitas vezes tomadas em equipe.\
+A comunicação entre os membros acontecia diariamente por aplicativos de mensagem de texto, e duas vezes por mês era feita uma chamado pelo Teams com formato de Daily para que os integrantes passassem as atualizões do andamento de cada funcionalidade da sprint. A equipe não demonstrou dificuldade nas sprints, mas sempre que uma dúvida surgia, os outros membros sempre estavam dispostos a ajudar, seja por mensagem de texto ou por uma conferência.\
+As Sprints eram revisadas por todos os membros da equipe antes da postagem, e como resultado final, todas foram um sucesso. A metodologia adotada possibilitou a obtenção de uma agenda extremamente organizada e um andamento tranquilo do projeto. No final, todos saíram com uma grande sensação de aprendizado, a troca de conhecimento entre o grupo e a familiaridade que obtivemos com as metodologias ágeis fizeram toda diferença.
