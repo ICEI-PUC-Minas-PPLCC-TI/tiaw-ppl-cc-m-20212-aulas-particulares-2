@@ -59,8 +59,9 @@ Funcionalidade que permite a edição e exclusão de um perfil pessoal cadastrad
 ![Perfil4](https://user-images.githubusercontent.com/79855405/145934506-ac9c6104-489d-4ea7-a591-8eb92c837b55.png)
 ![perfil5](https://user-images.githubusercontent.com/79855405/145934520-29295930-6b39-4101-9cac-30f1a94bcaa0.png) <br>
 
-- Após a edição, basta clicar em Concluir, e o usuário será redirecionadode volta para a nova página de perfil editada
-![perfil6](https://user-images.githubusercontent.com/79855405/145934589-dd9d532b-66ec-48dd-a8fd-fb9acb940d9e.png) <br>
+- Após a edição, basta clicar em Concluir, e o usuário será redirecionado de volta para a nova página de perfil editada
+![perfil6](https://user-images.githubusercontent.com/79855405/145934589-dd9d532b-66ec-48dd-a8fd-fb9acb940d9e.png)
+![perfilfinal](https://user-images.githubusercontent.com/79855405/145934757-37874808-7f5a-405c-8581-5c7ebda37311.png) <br>
 
 
 
