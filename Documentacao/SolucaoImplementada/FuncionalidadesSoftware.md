@@ -61,7 +61,7 @@ Funcionalidade que permite a edição e exclusão de um perfil pessoal cadastrad
 
 - Após a edição, basta clicar em Concluir, e o usuário será redirecionado de volta para a nova página de perfil editada
 ![perfil6](https://user-images.githubusercontent.com/79855405/145934589-dd9d532b-66ec-48dd-a8fd-fb9acb940d9e.png)
-![perfilfinal](https://user-images.githubusercontent.com/79855405/145934757-37874808-7f5a-405c-8581-5c7ebda37311.png) <br>
+![perfilfinal](https://user-images.githubusercontent.com/79855405/145934889-7a5dc2fc-5885-48c4-85cd-68b04d5e9e86.png)<br>
 
 
 
