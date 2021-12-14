@@ -37,7 +37,7 @@
 ## Ferramentas Utilizadas
 - Comunicação:
   - Whatsapp - Para comunicação em geral no formato de texto
-  - Microsoft Teams - Para chamadas mais importantes realização da daily
+  - Microsoft Teams - Para chamadas mais importantes e realização da daily
 - Editor de Código:
   - Visual Studio Code - Escolhido por ter uma integração com o Github, o que facilita a manipulçaão de branchs e o sistem de versão em geral
   - Replit - Escolhido em determinados momentos para finalidades de teste pela rapidez em reproduzir o ambiente do projeto no navegador
@@ -48,4 +48,7 @@
   - Firefox - Usado para teste
   - Edge - Usado para teste
 - Gerenciamento de Projeto:  
-  - GitHub - Ambiente escolhido pela coveniência e pela proximidade com o ambiente de gestão de código 
+  - GitHub - Ambiente escolhido pela coveniência e pela proximidade com o ambiente de gestão de código<br>
+
+
+## Processo
