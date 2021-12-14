@@ -76,6 +76,38 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - profile_edit.html
 - profile_edit.js <br> <br> <br>
 
+# Funcionalidade de Busca de Perfis e Visualização de Perfil Pessoal
+### Funcionalidade que permite a busca de professores cadastrados na plataforma por nome, e visualização do perfil de um professor selecionado
+- Em qualquer página, clique no menu hambúrguer localizado no header e depois em "Professores"
+![prof1](https://user-images.githubusercontent.com/79855405/145932406-7c4fd375-3d7c-42cb-9d98-d0a51bcc46f7.png) <br>
+
+- Redirecionamento para página de Professores feito com sucesso
+- Agora o usuário deve digitar o nome do professor que deseja e realizar a busca
+![busca1](https://user-images.githubusercontent.com/79855405/145936177-66e2336a-6269-41ec-8f03-2090af81f0ab.png) <br>
+- A busca apresentará os resultados
+![busca2](https://user-images.githubusercontent.com/79855405/145936209-89c27ee9-a113-45a3-80b1-03d00acae5c0.png) <br>
+- Clicar no botão "Contratar", levará o usuário para a página de perfil do professor selecionado
+![pedro1](https://user-images.githubusercontent.com/79855405/145936269-66cd88f7-6292-4be2-9c8c-000603a0e4dc.png)
+![pedro2](https://user-images.githubusercontent.com/79855405/145936276-ae196308-b9df-48c6-aa67-1a1860b8c139.png) <br>
+- Clicar no ícono de chat permite que o usuário seja redirecionado para um chat privado com o professor no aplicativo do WhatsApp <br>
+
+### Requisitos atendidos:
+- RF-02, RF-04 <br>
+
+### Artefatos da Funcionalidade:
+- index.html
+- style.css
+- login.js
+- login.css
+- professores.html
+- perfilprofessor.html
+- styleProfile.css
+- Cpesquisa.js
+- script.js
+ <br> <br> <br>
+
+
+
 
 
 
