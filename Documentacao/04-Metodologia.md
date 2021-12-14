@@ -39,7 +39,7 @@
   - Whatsapp - Para comunicação em geral no formato de texto
   - Microsoft Teams - Para chamadas mais importantes e realização da daily
 - Editor de Código:
-  - Visual Studio Code - Escolhido por ter uma integração com o Github, o que facilita a manipulçaão de branchs e o sistem de versão em geral
+  - Visual Studio Code - Escolhido por ter uma integração com o Github, o que facilita a manipulaçaão de branchs e do sistema de versão em geral
   - Replit - Escolhido em determinados momentos para finalidades de teste pela rapidez em reproduzir o ambiente do projeto no navegador
 - Ferramenta de diagramação:
   - Miro - Escolhido para ideação dos esquemas de arquitetura pela facilidade de manipulação de texto e imagem
@@ -48,10 +48,10 @@
   - Firefox - Usado para teste
   - Edge - Usado para teste
 - Gerenciamento de Projeto:  
-  - GitHub - Ambiente escolhido pela coveniência e pela proximidade com o ambiente de gestão de código<br>
+  - GitHub - Ambiente escolhido pela conveniência e pela proximidade com o ambiente de gestão de código<br>
 
 
 ## Processo
 Para o processo de realização do trabalho, foi utilizada a metologia Scrum em paralelo com a organização das sprints num quadro kanban. O tempo de cada Sprint foi determinado pelos professores da matéria, que exerceram um papel análogo ao de Product Owner. O papel de Scrum Master foi revezado entre os integrantes do grupo, e devido ao tamanho ínfimo da equipe (3 membros), as decisões que seriam de responsabilidade do Scrum Master eram muitas vezes tomadas em equipe.\
-A comunicação entre os membros acontecia diariamente por aplicativos de mensagem de texto, e duas vezes por mês era feita uma chamada pelo Teams com formato de Daily para que os integrantes passassem as atualizões do andamento de cada funcionalidade da sprint. A equipe não demonstrou dificuldade nas mesmas, mas sempre que uma dúvida surgia, os outros membros sempre estavam dispostos a ajudar, seja por mensagem de texto ou por uma conferência.\
+A comunicação entre os membros acontecia diariamente por aplicativos de mensagem de texto, e duas vezes por mês era feita uma chamada pelo Teams com formato de Daily para que os integrantes passassem as atualizações do andamento de cada funcionalidade da sprint. A equipe não demonstrou dificuldade nas mesmas, mas sempre que uma dúvida surgia, os outros membros sempre estavam dispostos a ajudar, seja por mensagem de texto ou por uma conferência.\
 As Sprints eram revisadas por todos os membros da equipe antes da postagem, e como resultado final, todas foram um sucesso. A metodologia adotada possibilitou a obtenção de uma agenda extremamente organizada e um andamento tranquilo do projeto. No final, todos saíram com uma grande sensação de aprendizado, a troca de conhecimento entre o grupo e a familiaridade que obtivemos com as metodologias ágeis fizeram toda diferença. As ferramentas utilizadas durante o processo já foram apresentadas acima.
