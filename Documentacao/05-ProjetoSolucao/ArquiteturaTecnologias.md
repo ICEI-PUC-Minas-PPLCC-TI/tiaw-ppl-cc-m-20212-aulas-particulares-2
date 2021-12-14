@@ -1,7 +1,7 @@
 # Arquitetura da Solução 
 
 ### Todos os componentes que fazem parte da arquitetura adotada pelo projeto estão representados na figura abaixo:
-![ArquiteturaSolucao](https://user-images.githubusercontent.com/79855405/145764336-9a0657b3-7d2c-4aba-aa91-67c0e50595c4.jpg)<br><br><br>
+![ArquiteturaSolucao](https://user-images.githubusercontent.com/79855405/145764336-9a0657b3-7d2c-4aba-aa91-67c0e50595c4.jpg)<br><br>
 
 ## Definição dos elementos da arquitetura abaixo: <br><br>
 ### Camada de Apresentação 
@@ -12,4 +12,13 @@
  - **Navegador Web** - Aplicação de navegador responsável por gerenciar toda a parte do projeto no lado Client e realizar a comunicação com o servidor por meio da internet.
  - **Aplicação API / Local Storage / Session Storage** - Funcionalidades do navegador responsáveis pela funcionalidade de grande parte do conteúdo do projeto.
 ### Camada do Servidor Web
- - **Hospedagem no Replit** - O site do Replit foi escolhido como serviço responsável por realizar a hospedagem do site, exercendo o papel de servidor.
+ - **Hospedagem no Replit** - O site do Replit foi escolhido como serviço responsável por realizar a hospedagem do site, exercendo o papel de servidor.<br><br>
+
+## Arquitetura das páginas do projeto 
+ Todas as páginas do projeto podem ser acessadas pela HomePage, a página principal. Dentre os diversos caminhos que podem ser seguidos, os principais são:\
+ - HomePage -> Página de Busca por Profesores -> Perfil do Professor Selecionado 
+ - HomePage -> Cadastro
+ - HomePage -> Contato / Nosso Time
+ - Homepage -> Login -> Perfil Pessoal -> Editar Perfil <br>
+ 
+ ![FluxoUsuario](https://user-images.githubusercontent.com/79855405/145918355-e33ea92d-46b6-45fc-a704-0e98255d38ee.jpg)
