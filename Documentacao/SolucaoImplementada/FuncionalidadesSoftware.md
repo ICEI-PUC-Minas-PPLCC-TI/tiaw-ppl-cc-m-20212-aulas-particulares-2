@@ -76,7 +76,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - profile_edit.html
 - profile_edit.js <br> <br> <br>
 
-# Sprint 3 - Funcionalidade de Busca de Perfis e Visualização de Perfil Pessoal
+# Sprint 3 - Funcionalidade de Busca de Perfis e Visualização de Perfil de Professor
 ### Funcionalidade que permite a busca de professores cadastrados na plataforma por nome, e visualização do perfil de um professor selecionado
 - Em qualquer página, clique no menu hambúrguer localizado no header e depois em "Professores"
 ![prof1](https://user-images.githubusercontent.com/79855405/145932406-7c4fd375-3d7c-42cb-9d98-d0a51bcc46f7.png) <br>
@@ -106,7 +106,25 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - script.js
  <br> <br> <br>
 
+# Sprint 3 - Funcionalidade de Cadastro de Aluno no Perfil do Professor
+### Funcionalidade para inserir perfis se alunos que são ou já foram alunos de determinado professor 
+- No perfil pessoal, clique em "Cadastar Aluno"
+![aluno1](https://user-images.githubusercontent.com/79855405/145937189-7a2b03fd-1085-4a18-82ea-49c5b28e56ed.png) <br>
+- Preencha os dados do aluno e clique em "Salvar"
+![aluno2](https://user-images.githubusercontent.com/79855405/145937233-5bd66d78-0d52-446d-adf9-5634bbfbb019.png) <br>
+- Aluno salvo com sucesso
+![Aluno3](https://user-images.githubusercontent.com/79855405/145937253-fcd8eeef-0e22-42a2-b2f0-4d733bb28ed3.png) <br>
 
+
+### Requisitos atendidos:
+- RF-19 <br>
+
+### Artefatos da Funcionalidade:
+- index.html
+- style.css
+- login.js
+- login.css
+- profile.html <br> <br> <br>
 
 
 
