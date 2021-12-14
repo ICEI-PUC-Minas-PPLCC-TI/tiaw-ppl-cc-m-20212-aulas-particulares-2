@@ -127,6 +127,26 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - profile.html <br> <br> <br>
 
 
+# Sprint 3 - Funcionalidade de Busca de Professor por Matéria e Localização
+### Realiza busca de professor utilizando como critério a matéria e a localização informados pelo usuário
+- Para, realizar a busca, os campos de busca devem ser preenchidos
+![buscaprof](https://user-images.githubusercontent.com/79855405/145943644-a923beb5-25bd-4cd0-9d53-0169f2113a39.png) <br>
+- Os professores que atendem aos critérios da busca serão exibidos na página de busca de perfis
+![buscaprof2](https://user-images.githubusercontent.com/79855405/145943728-3e0f9209-7de2-4aba-b237-b725535da927.png) <br>
+
+### Requisitos atendidos:
+- RF-03, RF-04 <br>
+
+### Artefatos da Funcionalidade:
+- index.html
+- style.css
+- login.js
+- login.css 
+- professores.html
+- Cpesquisa.js <br> <br> <br>
+
+
+
 # Sprint 3 - Funcionalidade de Dark Mode com JavaScript
 ### Ativa o DarkMode da página
 - Para ativar, basta clicar no botão swift no canto superior direito da página
@@ -143,8 +163,5 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - login.js
 - login.css 
 - darkmode.js <br> <br> <br>
-
-
-
 
 
