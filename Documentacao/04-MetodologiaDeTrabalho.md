@@ -20,7 +20,7 @@
 ![quadro_kanban2](https://user-images.githubusercontent.com/79855405/135696382-3d15cb77-1456-4697-b053-3d0dc8a9ea87.png)
 <br>
 
-## Divisão de Papéis 
+## Atribuições
   - **Sprint 1**
     - Elaboração da documentação inicial do projeto - Responsáveis: Camila Machado, Gustavo Gomes e Pedro Pampolini
   - **Sprint 2**
