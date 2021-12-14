@@ -22,7 +22,7 @@
 
 ## Divisão de Papéis 
   - Sprint 1
-   - Elaboração da documentação inicial do projeto - Responsáveis: Camila Machado, Gustavo Gomes e Pedro Pampolini
+    - Elaboração da documentação inicial do projeto - Responsáveis: Camila Machado, Gustavo Gomes e Pedro Pampolini
   - Sprint 2
    - Template Padrão do Site - Responsável: Camila Machado
    - Funcionalidade de Login do Sistema - Responsável: Gustavo Gomes
