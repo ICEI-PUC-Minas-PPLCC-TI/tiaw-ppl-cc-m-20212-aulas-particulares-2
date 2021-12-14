@@ -5,5 +5,5 @@
 - Contexto do Projeto (Problema, objetivo do projeto, justificativa e público-alvo)
 - Projeto da Solução (Requisitos funcionais, requisitos não funcionais, restrições do projeto, projeto de interface(fluxo do site, wireframes e protótipo interativo), arquitetura e tecnologias)
 - Metodologia de Trabalho (Estrutura, fluxo de trabalho no repositório do GitHub, quadro de controle de tarefas (Kanban), processo, atribuições e ferramentas)
-- Solução Implementada (Template do site, funcionalidades de software)
+- Solução Implementada (Template do site e funcionalidades de software)
 - Testes (Testes de software e usabilidade)
