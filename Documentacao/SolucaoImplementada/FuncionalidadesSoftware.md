@@ -53,7 +53,7 @@ Funcionalidade que permite a edição e exclusão de um perfil pessoal cadastrad
 ![perfil2](https://user-images.githubusercontent.com/79855405/145934315-a0ab7e96-aecf-4db5-9447-685e6bfbb7cd.png) <br>
 
 - Abaixo é possível visualizar a opção de apagar perfil
-![Perfil4](https://user-images.githubusercontent.com/79855405/145934398-92e72d23-9610-4e50-8487-ccdee7b1469a.png) <br>
+![perfil3apagar](https://user-images.githubusercontent.com/79855405/145934973-c9843e6b-db4c-4792-8554-333b67bc080f.png)<br>
 
 - Clicando em Editar, o usuário é redirecionado para a página de edição do perfil
 ![Perfil4](https://user-images.githubusercontent.com/79855405/145934506-ac9c6104-489d-4ea7-a591-8eb92c837b55.png)
