@@ -19,3 +19,13 @@ Plataforma criada para suprir a necessidade de uma educação de reforço realiz
 
 Para acessar o conteúdo do projeto, é necessário o uso de um aperelho desktop ou mobile com acesso a internet por meio de um navegador. O link do site hospedado na internet por meio do Replit é o seguinte: [https://tiaw-final.gustavgomes.repl.co/](https://tiaw-final.gustavgomes.repl.co/). Após acessar o link, aprenda sobre todas as funcionalidades que são oferecidas e como usá-las [aqui](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/blob/master/Documentacao/SolucaoImplementada/FuncionalidadesSoftware.md).\
 Bem vindo ao PAPO!
+
+# Estrutura do Documento
+
+1. [DesignThinking](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/tree/master/Documentacao/01-DesignThinking)
+2. [Contexto](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/blob/master/Documentacao/02-Contexto.md)
+3. [Projeto da Solução](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/tree/master/Documentacao/03-ProjetoDaSolucao)
+4. [Metodologia de Trabalho](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/blob/master/Documentacao/04-MetodologiaDeTrabalho.md)
+5. [Solução Implementada](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/tree/master/Documentacao/05-SolucaoImplementada)
+6. [Testes de Software e Usabilidade](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/tree/master/Documentacao/06-TestesDeSoftwareUsabilidade)
+9. [Divulgação e Apresentação](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/tree/master/Divulgacao)
