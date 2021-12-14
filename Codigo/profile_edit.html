@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<script src="script.js">
+	</script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	 crossorigin="anonymous">
+	<link href="login.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styleProfile.css">
+    <link rel="stylesheet" href="styledark.css">
+	<title>PAPO - Plataforma de Aulas Particulares Online</title>
+</head>
+
+<body>
+	<!--Cabeçalho-->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="logo_menu">
+						<!--Logo-->
+						<div class="logo">
+							<img id="papo" src="img/Logo_prov.png" alt="PAPO">
+                        </div>
+
+                        <!--Menu Dropdown -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <li class="fa fa-bars"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="professores.html">Professores</a>
+                                <a class="dropdown-item" href="#">Matérias</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Menu principal-->
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Nosso time</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="inscrever-perfil" href="cadastro.html">Inscreva-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="show-login" href="">Login</a>
+                        </li>
+                        <li>
+                            <img id="estrela" src="https://repetit.ru/img/star_add_to_favourites.png" width="21" height="19">
+                        </li>
+                        <li>
+                            <div class="toggle">
+                                <input id="Cswitch" type="checkbox" name="theme">
+                                <label id="darkModeToggle"  for="Cswitch">Toggle</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--------------- LOGIN -------------->
+
+        <script>
+          function exibeUsuarios() {
+              let listaUsuarios = '';
+              for (i = 0; i < db_usuarios.usuarios.length; i++) {
+                  let usuario = db_usuarios.usuarios[i];
+                  listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.logio}</td><td>${usuario.email}</td></td>`;
+              }
+              document.getElementById("table-usuarios").innerHTML = listaUsuarios;
+          }
+
+          function initPage() {
+              
+
+          }
+          window.addEventListener('load', initPage);
+        </script>
+      
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
+              <h2>Entrar</h2>
+              <div class="form-element">
+                  <label for="email">E-mail</label>
+                  <input type="text" id="email" placeholder="Insira e-mail">
+              </div>
+              <div class="form-element">
+                  <label for="senha">Senha</label>
+                  <input type="password" id="senha" placeholder="Insira senha">
+              </div>
+              <div class="form-element">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Lembre-se de mim</label>
+              </div>
+              <div class="form-element">
+                  <button id="login-form">Entrar</button>
+              </div>
+              <div class="form-element">
+                  <div id="cadastrar">
+                      <a href="cadastro.html">Não é cadastrado?</a>
+                  </div>
+                  <div id="recuperar">
+                      <a href="#">Esqueceu sua senha?</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <script>
+          function processaFormLogin(event) {
+              event.preventDefault();
+
+              var email = document.getElementById('email').value;
+              var password = document.getElementById('senha').value;
+
+              resultadoLogin = loginUser(email, password);
+              if (resultadoLogin) {
+                  window.location.href = '#';
+              } else {
+                  alert('Usuário ou senha incorretos');
+              }
+          }
+
+          document.getElementById('login-form').addEventListener('click', processaFormLogin);
+        </script>
+
+        <!--------------- LOGIN -------------->
+
+    </header>
+
+
+    <main class="main">
+        <script>
+            var url = window.location.href;
+            urlUserName = url.split('?username=')[url.split('?username=').length-1];
+            db_usuarios = JSON.parse(localStorage.getItem('db_usuarios'));
+            var userIndex = 0;
+            for (let i = 0; i < db_usuarios.length; i++) {
+                if(db_usuarios[i]['username'] == urlUserName){
+                    userIndex = i;
+                    break;
+                }
+                
+            }
+            var atualUser = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+        </script>
+        <div class="Pinformacao">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-3 col-lg-4">
+                    <div id="Papresentacao">
+                        <script>
+                        Papresentacao.innerHTML = `
+                        <p><img class="PfotoPerfil" src="${atualUser['fotoPerfil']}" alt=""></p>
+                
+                        <p class="PnomeUsuario"><input type="text" id="Enome" name="Enome" value="${atualUser['nome']}"></p>
+                        
+                        <p class="Pusername">@<input type="text" id="Eusername" name="Eusername" value="${atualUser['username']}"></p>`;
+                    </script></div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-9 col-lg-8">
+                    <div class="Pdados">
+                        <p>
+                            <div id="Pdescricao">
+                                <script>
+                                    Pdescricao.innerHTML=`
+                                    <p><strong>Sobre:</strong><br>
+                                    <textarea type="text" id="Edescricao" name="Edescricao">${atualUser.descricao}</textarea></p>`;
+                                </script>
+                            </div>
+                        </p>
+                        <p id="Pavaliacao"><strong>Avaliação: </strong></p>
+                        <p id="Pexperiencia">
+                            <script>
+                                Pexperiencia.innerHTML = `
+                                <p><strong>Experiência:<qstrong><input type="text" id="Eexperiencia" name="Eexperiencia" value="${+atualUser.experiencia}"> anos</p>`;
+                            </script>
+                        </p>
+                        <p id="Pnascimento">
+                            <script>
+                                Pnascimento.innerHTML = `
+                                <p><strong>Nascimento:</strong> ${atualUser.dataNascimento.substring(0,2)}/${atualUser.dataNascimento.substring(2,4)}/${atualUser.dataNascimento.substring(4)}</p>`;
+                            </script>
+                        </p>
+                        <p id="Pcep">
+                            <script>
+                                Pcep.innerHTML = `<strong>Estado: </strong><input type="text" id="Eestado" name="Eestado" value="${atualUser.estado}"> <strong>Cidade: </strong><input type="text" id="Ecidade" name="Ecidade" value="${atualUser.cidade}">`;
+                            </script>
+                        </p>
+                        <p><button id="concluir">Concluir</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="PmaisInfo">
+            <div class="row">
+                <div class="col-12 col-sm-6 contato2">
+                    <div class="contato">
+                        <p id="Ptelefone">
+                            <script>
+                                Ptelefone.innerHTML = `<strong>Telefone: </strong> <input type="text" id="Etelefone" name="Etelefone" value="${atualUser.telefone}">`;
+                            </script>
+                        </p>
+                        <p id="Pemail">
+                            <script>
+                                Pemail.innerHTML = `
+                                <strong>Email: </strong> <input type="text" id="Eemail" name="Eemail" value="${atualUser.email}">`;
+                            </script>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div id="PmateriasLecionadas">
+                      <script>
+                          PmateriasLecionadas.innerHTML = `
+                          <p><strong>Matérias: (Coloque as matérias separadas por vírgula) <textarea type="text" id="Ematerias" name="Ematerias" value="">${(atualUser.materia).join(",")}</textarea></strong></p>`;
+                       </script>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Pvalores">
+            <script>
+                Pvalores.innerHTML =
+                `<p><strong>Valores: </strong></p>
+                <p><strong>Valor Mínimo: </strong>R$<input type="text" id="Emin" name="Emin" value="${atualUser.valorMin}"> <strong>Valor Máximo: </strong>R$<input type="text" id="Emax" name="Emax" value="${atualUser.valorMax}"></p>`;
+            </script>
+        </div>
+    </main>
+
+ 
+    <!--Rodapé-->
+    <footer class="footer">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <ul>
+                    <li>
+                        <div class="logo">
+                            <img src="img/Logo_prov.png" alt="PAPO">
+                        </div>
+                    </li>
+                    <li><p>Telefone: +xx (xx) 9xxxx-xxxx</p></li>
+                    <li><p>Email: contato@dominio.com.br</p></li>
+                    <li><p>Localização: <a href="https://goo.gl/maps/84exw4SQHGfMFRw89" target="_blank">maps</a></p></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <ul>
+                    <li><p>Aluno</p></li>
+                    <li><a href="professores.html">Encontre um professor</a></li>
+                    <li><a href="#">Materiais</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <ul>
+                    <li><p>Professor</p></li>
+                    <li><a href="#">Registrar agora</a></li>
+                    <li><a href="#">Termos</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="redesDiv">
+                    <ul class="redes">
+                        <li><p>Estamos também</p></li>
+                        <li class="link_rede"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li class="link_rede"><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Links JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+    <script src="profile_edit.js"></script>
+    <script>
+        function saveNewData(event) {
+            event.preventDefault();
+            if (Enome.value.length == 0 || Eusername.value.length == 0 || Edescricao.value.length == 0 || Eexperiencia.value.length == 0 || Ecidade.value.length == 0 || Eestado.value.length == 0 || Etelefone.value.length == 0 || Eemail.value.length == 0 || Emin.value.length == 0 || Emax.value.length == 0) {
+              alert("Você deve preencher todos os campos!");
+              return;
+            } else {
+              let nome = document.getElementById('Enome').value;
+              let username = document.getElementById('Eusername').value;
+              let descricao = document.getElementById('Edescricao').value;
+              let experiencia = document.getElementById('Eexperiencia').value;
+              let cidade = document.getElementById('Ecidade').value;
+              let estado = document.getElementById('Eestado').value;
+              let telefone = document.getElementById('Etelefone').value;
+              let email = document.getElementById('Eemail').value;
+              let min = document.getElementById('Emin').value;
+              let max = document.getElementById('Emax').value;
+              let materias = (document.getElementById('Ematerias').value).split(",");
+
+              changeUser(nome, username, descricao, experiencia, cidade, estado, telefone, email, min, max, materias);
+              alert('Entidade editada com sucesso! Encaminhando para a página de perfil...');
+            }
+          }  
+
+        document.getElementById('concluir').addEventListener('click', saveNewData);
+    </script>
+
+
+
+    <!--Script de erro ao logar-->
+    <script>
+        if (!(urlUserName == usuarioCorrente["username"])) {
+            document.querySelector(".main").innerHTML = `
+            <p style="font-size:3em;"><strong>Ops! Parece que ocorreu um erro</strong></p>`;
+        }
+    </script>
+    <script src="darkmode.js"></script>
+</body>
+</html>
