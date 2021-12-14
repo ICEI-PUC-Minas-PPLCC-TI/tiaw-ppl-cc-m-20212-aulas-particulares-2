@@ -22,7 +22,7 @@ Bem vindo ao PAPO!
 
 # Estrutura do Documento
 
-1. [DesignThinking](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/tree/master/Documentacao/01-DesignThinking)
+1. [Design Thinking](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/tree/master/Documentacao/01-DesignThinking)
 2. [Contexto](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/blob/master/Documentacao/02-Contexto.md)
 3. [Projeto da Solução](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/tree/master/Documentacao/03-ProjetoDaSolucao)
 4. [Metodologia de Trabalho](https://github.com/ICEI-PUC-Minas-PPLCC-TI/tiaw-ppl-cc-m-20212-aulas-particulares-2/blob/master/Documentacao/04-MetodologiaDeTrabalho.md)
