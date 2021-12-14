@@ -19,3 +19,17 @@
 - Para a gestão do projeto, a equipe optou pela utilização do ambiente de projetos do próprio GitHub, através da utilização de quadros Kanban
 ![quadro_kanban2](https://user-images.githubusercontent.com/79855405/135696382-3d15cb77-1456-4697-b053-3d0dc8a9ea87.png)
 <br>
+
+## Divisão de Papéis 
+  - Sprint 1
+   - Elaboração da documentação inicial do projeto - Responsáveis: Camila Machado, Gustavo Gomes e Pedro Pampolini
+  - Sprint 2
+   - Template Padrão do Site - Responsável: Camila Machado
+   - Funcionalidade de Login do Sistema - Responsável: Gustavo Gomes
+   - Funcionalidade de Apresentação de Informação - Responsável: Pedro Pampolini
+  - Sprint 3
+   - Funcionalidade de Cadastro do Usuário - Responsável: Gustavo Gomes
+   - Busca de Perfis e Visualização de Perfil Pessoal - Responsável: Pedro Pampolini
+   - Funcionalidades JavaScript (Dark Mode, Busca de Professor, Verificar Dados de Cadastro) - Responsável: Camila Machado
+  - Sprint 4
+   - Finalização da documentação do Projeto - Responsáveis: Camila Machado, Gustavo Gomes e Pedro Pampolini
