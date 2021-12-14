@@ -27,7 +27,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - cadastro.css
 - validaemail.js
 - login.js
-- login.css
+- login.css <br> <br>
 
 # Sprint 2 - Funcionalidade de Visualização dos Perfis de Professores Cadastrados
 ### Funcionalidade que permite a visualização de uma lista com todos os professores cadastrados na plataforma
@@ -43,7 +43,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 ### Artefatos da Funcionalidade:
 - index.html
 - style.css
-- professores.html (JavaScript da página imbutido dentro do HTML) <br>
+- professores.html (JavaScript da página imbutido dentro do HTML) <br> <br>
 
 # Sprint 3 - Funcionalidade de Edição e Exclusão do Perfil de Usuário
 ### Funcionalidade que permite a edição e exclusão de um perfil pessoal cadastrado na plataforma
