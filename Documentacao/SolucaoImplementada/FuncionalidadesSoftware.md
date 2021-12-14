@@ -76,7 +76,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - profile_edit.html
 - profile_edit.js <br> <br> <br>
 
-# Funcionalidade de Busca de Perfis e Visualização de Perfil Pessoal
+# Sprint 3 - Funcionalidade de Busca de Perfis e Visualização de Perfil Pessoal
 ### Funcionalidade que permite a busca de professores cadastrados na plataforma por nome, e visualização do perfil de um professor selecionado
 - Em qualquer página, clique no menu hambúrguer localizado no header e depois em "Professores"
 ![prof1](https://user-images.githubusercontent.com/79855405/145932406-7c4fd375-3d7c-42cb-9d98-d0a51bcc46f7.png) <br>
@@ -89,7 +89,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 - Clicar no botão "Contratar", levará o usuário para a página de perfil do professor selecionado
 ![pedro1](https://user-images.githubusercontent.com/79855405/145936269-66cd88f7-6292-4be2-9c8c-000603a0e4dc.png)
 ![pedro2](https://user-images.githubusercontent.com/79855405/145936276-ae196308-b9df-48c6-aa67-1a1860b8c139.png) <br>
-- Clicar no ícono de chat permite que o usuário seja redirecionado para um chat privado com o professor no aplicativo do WhatsApp <br>
+- Clicar no ícone de chat permite que o usuário seja redirecionado para um chat privado com o professor no aplicativo do WhatsApp <br>
 
 ### Requisitos atendidos:
 - RF-02, RF-04 <br>
