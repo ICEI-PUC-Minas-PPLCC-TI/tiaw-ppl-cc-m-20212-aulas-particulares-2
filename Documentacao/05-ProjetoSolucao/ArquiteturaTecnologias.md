@@ -15,7 +15,7 @@
  - **Hospedagem no Replit** - O site do Replit foi escolhido como serviço responsável por realizar a hospedagem do site, exercendo o papel de servidor.<br><br>
 
 ## Arquitetura das páginas do projeto 
- Todas as páginas do projeto podem ser acessadas pela HomePage, a página principal. Dentre os diversos caminhos que podem ser seguidos, os principais são:\
+ ### Todas as páginas do projeto podem ser acessadas pela HomePage, a página principal. Dentre os diversos caminhos que podem ser seguidos, os principais são:
  - HomePage -> Página de Busca por Profesores -> Perfil do Professor Selecionado 
  - HomePage -> Cadastro
  - HomePage -> Contato / Nosso Time
