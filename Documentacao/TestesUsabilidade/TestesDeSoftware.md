@@ -59,6 +59,12 @@
 | 2 | Página de Professores Vazia                  | RF-02, RF-04        | ⦁	Clicar no botão de teste<br>   ⦁	Caso a página não carregue sozinha, apertar F5 para recarrega-la                                                                  | ⦁	Após clicar no botão de teste, irá carregar os perfis de teste dos professores no localStorage e recarregar a página para mostra-los. Caso queira adicionar um professor manualmente, basta seguir os passos acima         |
 | 3 | Página de Professores Filtrada pela Pesquisa | RF-02, RF-04        | ⦁	Verificar se a pesquisa condiz com os resultados<br>   ⦁	Pesquisar por mais de um item, sendo um de cada vez, e ver quais aparecem e quais não aparecem resultados | ⦁	O filtro de pesquisa deve ser eficiente, mostrando professores que dão aula de matemática, por exemplo, quando pesquisar por matemática, e caso não tenha nenhum professor cadastrado da matéria, mostrar nenhum professor |
 
+## Funcionalidade de Busca de Professor por Matéria e Localização
+
+| # | Cenário                                   | Requisito Funcional | Ações                                                                                         | Resultados Esperados                                                                                                                                     |
+|---|-------------------------------------------|---------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | Busca Professor por Matéria e Localização | RF-03, RF-04        | ⦁        Encontrar caixa de busca na HomePage<br> ⦁        Inserir matéria e localização desejada | ⦁        O usuário será redirecionado para a página de busca de profesores, somente os professores que atendem aos critérios da busca serão demonstrados |
+
 
 ## Funcionalidade de Cadastro de Aluno no Perfil do Professor
 
