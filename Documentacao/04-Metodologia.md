@@ -28,7 +28,7 @@
     - Funcionalidade de Login do Sistema - Responsável: Gustavo Gomes
     - Funcionalidade de Apresentação de Informação - Responsável: Pedro Pampolini
   - **Sprint 3**
-    - Funcionalidade de Cadastro do Usuário - Responsável: Gustavo Gomes
+    - Funcionalidade de Cadastro, Edição e Exclusão do Perfil de Usuário - Responsável: Gustavo Gomes
     - Busca de Perfis e Visualização de Perfil Pessoal - Responsável: Pedro Pampolini
     - Funcionalidades JavaScript (Dark Mode, Busca de Professor, Verificar Dados de Cadastro) - Responsável: Camila Machado
   - **Sprint 4**
