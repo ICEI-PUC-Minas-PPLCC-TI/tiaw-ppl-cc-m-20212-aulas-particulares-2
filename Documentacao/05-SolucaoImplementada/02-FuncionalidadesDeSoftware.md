@@ -6,15 +6,15 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 
 # Sprint 2 - Funcionalidade de Criação de Usuário e Login do Sistema
 ### Funcionalidade que permite a realização do login de um usuário cadastrado na plataforma
-- Em qualquer página. clique no link de inscreva-se localizado na header para ser direcionado à página de cadastro
-- Insira todos os seus dados nos campos de input e clique no botão de cadastrar
+- Em qualquer página, o usuário deve clicar no link de inscreva-se localizado na header para ser direcionado à página de cadastro
+- Inserir todos os dados pessoais nos campos de input e clicar no botão de cadastrar
 ![Cadastro2](https://user-images.githubusercontent.com/79855405/145930745-8f9595d9-4f79-4736-9cba-63dff545f14e.png)<br>
 
-- Após ser redirecionado para a página principal, clique no link de Login para abrir a janela PopUp
-- Preencha os dados e realize o login
+- Após ser redirecionado para a página principal, clicar no link de Login para abrir a janela PopUp
+- Preencher os dados e realizar o login
 ![cadastro2](https://user-images.githubusercontent.com/79855405/145931319-47086569-f34f-43a8-b9ea-dcf34a1df454.png) <br>
 
-- Após logar com sucesso, você poderá ver um link para seu perfil pessoal
+- Após logar com sucesso, será visível um link para o perfil pessoal
 ![cadastro 3](https://user-images.githubusercontent.com/79855405/145931393-fc1fb3dc-34a1-410b-b4f0-621972cde0f2.png) <br>
 
 ### Requisitos atendidos:
@@ -31,7 +31,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 
 # Sprint 2 - Funcionalidade de Visualização dos Perfis de Professores Cadastrados
 ### Funcionalidade que permite a visualização de uma lista com todos os professores cadastrados na plataforma
-- Em qualquer página, clique no menu hambúrguer localizado no header e depois em "Professores"
+- Em qualquer página, clicar no menu hambúrguer localizado no header e depois em "Professores"
 ![prof1](https://user-images.githubusercontent.com/79855405/145932406-7c4fd375-3d7c-42cb-9d98-d0a51bcc46f7.png) <br>
 
 - Redirecionamento para página de Professores feito com sucesso
@@ -47,7 +47,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 
 # Sprint 3 - Funcionalidade de Edição e Exclusão do Perfil de Usuário
 ### Funcionalidade que permite a edição e exclusão de um perfil pessoal cadastrado na plataforma
-- Em qualquer lugar do site, clique no link do seu perfil pessoal, localizado no header
+- Em qualquer lugar do site, clicar no link do perfil pessoal, localizado no header
 ![perfil1](https://user-images.githubusercontent.com/79855405/145934280-21876276-6db6-48f6-acef-a45b335880ce.png) <br>
 
 - Será redirecionado para a página de perfil pessoal, aqui a opção de editar perfil já pode ser vista
@@ -78,7 +78,7 @@ Para visualizar os testes de software das mesmas funcionalidades que serão desc
 
 # Sprint 3 - Funcionalidade de Busca de Perfis e Visualização de Perfil de Professor
 ### Funcionalidade que permite a busca de professores cadastrados na plataforma por nome, e visualização do perfil de um professor selecionado
-- Em qualquer página, clique no menu hambúrguer localizado no header e depois em "Professores"
+- Em qualquer página, clicar no menu hambúrguer localizado no header e depois em "Professores"
 ![prof1](https://user-images.githubusercontent.com/79855405/145932406-7c4fd375-3d7c-42cb-9d98-d0a51bcc46f7.png) <br>
 
 - Redirecionamento para página de Professores feito com sucesso
