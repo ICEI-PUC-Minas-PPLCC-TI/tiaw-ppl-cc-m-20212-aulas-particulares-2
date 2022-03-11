@@ -83,7 +83,7 @@ document.querySelector('header').innerHTML = `
                     <input type="password" id="senha" placeholder="Insira senha">
                 </div>
                 <div class="form-element">
-                    <input type="checkbox" id="remember-me">
+                    <input type="checkbox" id="rememberme">
                     <label for="remember-me">Lembre-se de mim</label>
                 </div>
                 <div class="form-element">

@@ -54,11 +54,15 @@ const dadosIniciais = {
 
 
 function initLoginApp() {
-    
-    usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+    if (localStorage.getItem('usuarioCorrente') != null) {
+        var usuarioCorrenteJSON = localStorage.getItem('usuarioCorrente');
+    }
+    else{
+        usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+    }    
     if (usuarioCorrenteJSON) {
         usuarioCorrente = JSON.parse(usuarioCorrenteJSON);
-
+        console.log(usuarioCorrente)
         document.getElementById('inscrever-perfil').href='#';
         var userName = usuarioCorrente['nome'];
         userName = userName.split(' ')[0];
@@ -88,7 +92,9 @@ function loginUser(email, senha) {
 
         if (email.toLocaleLowerCase() == usuario.email.toLocaleLowerCase() && senha == usuario.senha) {
             usuarioCorrente = db_usuarios[i];
-
+            if (rememberme.checked) {
+                localStorage.setItem('usuarioCorrente', JSON.stringify (usuarioCorrente));
+            }
             sessionStorage.setItem('usuarioCorrente', JSON.stringify (usuarioCorrente));
             //alert('Logado com sucesso');
             window.location.reload();

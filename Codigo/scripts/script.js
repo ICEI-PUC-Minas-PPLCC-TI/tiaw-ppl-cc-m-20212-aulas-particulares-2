@@ -3,6 +3,9 @@ if(localStorage.getItem('db_usuarios') == null)
 {
     localStorage.setItem('db_usuarios',JSON.stringify(users));
 }
+if (localStorage.getItem('usuarioCorrente') != null) {
+    var usuarioCorrente = JSON.parse(localStorage.getItem('usuarioCorrente'));
+}
 
 /*------Estrutura de dados
 function Usuario()

@@ -35,7 +35,12 @@
                 }
                 
             }
-            var atualUser = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+            if (localStorage.getItem('usuarioCorrente') != null) {
+                atualUser =JSON.parse(localStorage.getItem('usuarioCorrente'));
+            }
+            else{
+                atualUser =JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+            }
         </script>
         <div class="Pinformacao">
             <div class="row">
@@ -324,7 +329,13 @@
         window.location.href = "index.html";
       }
       
-      usuarioCorrenteHere = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+    if (localStorage.getItem('usuarioCorrente') != null) {
+        usuarioCorrenteHere = JSON.parse(localStorage.getItem('usuarioCorrente'));
+        //console.log(usuarioCorrenteJSON);
+    }
+    else{
+        usuarioCorrenteHere = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
+    }
       document.getElementById("btnEditar").href=`profile_edit.html?username=${usuarioCorrenteHere.username}`;
       document.getElementById('btnApagar').addEventListener('click', deleteUser);
     </script>
