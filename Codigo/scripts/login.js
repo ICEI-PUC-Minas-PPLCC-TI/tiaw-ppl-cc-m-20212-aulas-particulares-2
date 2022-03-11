@@ -90,7 +90,7 @@ function loginUser(email, senha) {
             usuarioCorrente = db_usuarios[i];
 
             sessionStorage.setItem('usuarioCorrente', JSON.stringify (usuarioCorrente));
-            alert('Logado com sucesso');
+            //alert('Logado com sucesso');
             window.location.reload();
 
             return true;
