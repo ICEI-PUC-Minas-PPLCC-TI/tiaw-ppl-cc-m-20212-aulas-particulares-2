@@ -1,3 +1,3 @@
 # Código do Projeto
 
-Todo o código do projeto é mantido na raiz desta pasta, as imagens utilizadas estão contidas na pasta "img"
+Mantenha neste diretório todo o código do projeto. Se necessário, descreva neste arquivo aspectos relevantes da estrutura de diretórios criada para organização do código.
