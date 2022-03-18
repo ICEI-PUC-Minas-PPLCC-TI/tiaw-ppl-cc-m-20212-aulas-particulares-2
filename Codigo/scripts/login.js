@@ -144,7 +144,15 @@ function pegaGenero(){
     }
 }
 
-function addUser (nome, estado, cidade, telefone, email, senha, experiencia) {
+//Funções para alterar o cep
+let atualizaEndereco = () =>{
+    
+    return [cidade,estado];
+}
+
+let erro
+
+function addUser (nome, estado, cidade, telefone, email, senha, experiencia,gender,funcao,CEP) {
     
     let newId = generateUUID ();
     let dn = document.getElementById('data').value.replaceAll('-','');
@@ -153,18 +161,38 @@ function addUser (nome, estado, cidade, telefone, email, senha, experiencia) {
     let descricao = '';
     let avaliacao = 5;
     let avaliacaoQuanti = 1;
-    let papel = 'professor';
+    let papel = funcao;
     let fotoPerfil = 'https://picsum.photos/id/237/200/300';
-    let genero = pegaGenero();
+    let genero = gender;
     let username = removeAcento(nome.replaceAll(' ',''))+newId.replaceAll('-','');
     let valorMin = 0.01;
     let valorMax = 999.99;
     let alunos = [];
-    let usuario = { 'id': newId, 'nome': nome,'genero':genero,'idade': calcIdade(dataNascimento),'username':username, 'estado': estado, 'cidade': cidade,'dataNascimento':dataNascimento, 'telefone': telefone, 'materia':materia,'descricao':descricao, 'avaliacao':avaliacao, 'avaliacaoQuanti':avaliacaoQuanti, 'email': email, 'senha': senha,'papel':papel, 'experiencia':experiencia, 'fotoPerfil':fotoPerfil,'valorMin':valorMin,'valorMax':valorMax,'alunos':alunos};
-   
-    db_usuarios.push(usuario);
-
-    localStorage.setItem('db_usuarios', JSON.stringify (db_usuarios));
+    let city = cidade;
+    let state = estado;
+    let CEPApi = new XMLHttpRequest();
+    CEPApi.onload = function (responseText){
+        let cep = JSON.parse(this.responseText);
+        city = cep['city'];
+        state = cep['state'];
+        console.log(cep);
+        console.log("cidade: " + city + " estado: " + state);
+        //Salva o usuário no localStorage
+        let usuario = { 'id': newId, 'nome': nome,'genero':genero,'idade': calcIdade(dataNascimento),'username':username, 'CEP':CEP, 'estado': state, 'cidade': city,'dataNascimento':dataNascimento, 'telefone': telefone, 'materia':materia,'descricao':descricao, 'avaliacao':avaliacao, 'avaliacaoQuanti':avaliacaoQuanti, 'email': email, 'senha': senha,'papel':papel, 'experiencia':experiencia, 'fotoPerfil':fotoPerfil,'valorMin':valorMin,'valorMax':valorMax,'alunos':alunos};
+        db_usuarios.push(usuario);
+        localStorage.setItem('db_usuarios', JSON.stringify (db_usuarios));
+    };
+    CEPApi.onerror = (err) =>{
+        console.log(err);
+        //Salva o usuário no localStorage
+        let usuario = { 'id': newId, 'nome': nome,'genero':genero,'idade': calcIdade(dataNascimento),'username':username, 'CEP':CEP, 'estado': state, 'cidade': city,'dataNascimento':dataNascimento, 'telefone': telefone, 'materia':materia,'descricao':descricao, 'avaliacao':avaliacao, 'avaliacaoQuanti':avaliacaoQuanti, 'email': email, 'senha': senha,'papel':papel, 'experiencia':experiencia, 'fotoPerfil':fotoPerfil,'valorMin':valorMin,'valorMax':valorMax,'alunos':alunos};
+        db_usuarios.push(usuario);
+        localStorage.setItem('db_usuarios', JSON.stringify (db_usuarios));
+    }
+    CEPApi.open('GET',`https://ws.apicep.com/cep/${CEP.toString()}.json`);
+    CEPApi.send();
+    
+    
 }
 
 function setUserPass () {

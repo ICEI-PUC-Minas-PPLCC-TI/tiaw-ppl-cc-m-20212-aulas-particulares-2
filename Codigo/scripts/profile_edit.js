@@ -1,4 +1,4 @@
-function changeUser (nome, username, descricao, experiencia, cidade, estado, telefone, email, min, max, materias) {
+function changeUser (nome, username, descricao, experiencia, cidade, estado, telefone, email, min, max, materias,CEP) {
   usuarioCorrente = JSON.parse(sessionStorage.getItem('usuarioCorrente'));
   db_usuarios = JSON.parse(localStorage.getItem('db_usuarios'));
 
@@ -21,6 +21,7 @@ function changeUser (nome, username, descricao, experiencia, cidade, estado, tel
   db_usuarios[userIndex].valorMin = min;
   db_usuarios[userIndex].valorMax = max;
   db_usuarios[userIndex].materia = materias;
+  db_usuarios[userIndex].CEP = CEP;
   localStorage.clear();
   localStorage.setItem('db_usuarios', JSON.stringify(db_usuarios));
   sessionStorage.clear();

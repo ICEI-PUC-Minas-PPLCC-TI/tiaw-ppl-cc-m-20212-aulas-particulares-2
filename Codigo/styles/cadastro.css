@@ -71,6 +71,10 @@
     background-color: #75b0d3;
 }
 
+.form .papel input{
+    margin-left: 20px;
+}
+
 /*Cabeçalho*/
 .header{
     background-image: linear-gradient(to top,#699ebd,#75b0d3);

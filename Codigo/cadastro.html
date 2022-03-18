@@ -35,7 +35,7 @@
                         <label for="checkbox">Gênero</label>
                     </div>
                     <div class="gender">
-                        <div class="checkboxgenero" id="checkbox">
+                        <div class="checkboxgenero" id="gender">
                             <input type="checkbox" id="masculino" name="sexo">
                             <label for="masculino">M</label>
                             <input type="checkbox" id="feminino" name="sexo">
@@ -51,14 +51,25 @@
                     <div class="label">
                         <label for="telefone">Número de telefone</label>
                     </div>
-                    <input type="tel" id="telefone" name="telefone">
-
-                    
+                    <input class="onlyNumber" type="number" id="telefone" name="telefone">
 
                     <div class="label">
                         <label for="experiencia">Experiência com aulas</label>
                     </div>
-                    <input type="text" id="experiencia" name="experiencia">
+                    <input class="onlyNumber" type="number" id="experiencia" name="experiencia">
+
+                    
+                    <div class="papel">
+                            
+                        
+                        <div class="checkboxgenero" id="papel">
+                            <label for="papel">Você é: </label>
+                            <input type="checkbox" id="opcaoProfessor" name="sexo">
+                            <label for="opcaoProfessor">Professor</label>
+                            <input type="checkbox" id="opcaoAluno" name="sexo">
+                            <label for="opcaoAluno">Aluno</label>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -87,6 +98,11 @@
                         <label for="cidade">Cidade</label>
                     </div>
                     <input type="text" id="cidade" name="cidade">
+
+                    <div class="label">
+                        <label for="cidade">CEP</label>
+                    </div>
+                    <input class="onlyNumber" type="number" id="cep" name="cep">
                 </div>
 
                 <div class="form-element botao col-12">
@@ -139,19 +155,40 @@
               let email = document.getElementById('cemail').value;
               let senha = document.getElementById('csenha').value;
               let senha2 = document.getElementById('csenha2').value;
+              let gender;
+              let CEP = document.getElementById('cep').value;
+              if(document.getElementById('feminino').checked){
+                gender = 'Feminino';
+              }
+              else if (document.getElementById('masculino').checked) {
+                  gender = 'Masculino';
+              }
+              else{
+                  gender = 'Não informado';
+              }
               let experiencia = document.getElementById('experiencia').value;
+              let papel;
+
+              if(document.getElementById('opcaoProfessor').checked){
+                papel = 'professor';
+              }
+              else {
+                  papel = 'aluno';
+              }
+
               if (senha != senha2) {
                 event.preventDefault();
                   alert('As senhas informadas não conferem');
                   
               }
               else{
-                addUser(nome, estado, cidade, telefone, email, senha, experiencia);
+                addUser(nome, estado, cidade, telefone, email, senha, experiencia, gender,papel,CEP);
                 alert('Entidade salva com sucesso. Encaminhando para a página principal... Proceda com o login');
                 window.location.href = 'index.html';
               }
               
             }
+            
           
           
         }  
