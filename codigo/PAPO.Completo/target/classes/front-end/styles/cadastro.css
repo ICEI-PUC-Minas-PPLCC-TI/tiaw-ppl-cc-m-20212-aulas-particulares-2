@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.form h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 10px 0px 20px;
+    font-size: 40px;
+}
+
+.form .form-element {
+    margin: 10px 0px;
+}
+
+.form .form-element label {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.form input{
+    margin-top: 15px;
+}
+
+.label {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+}
+
+.gender {
+    display: inline-block;
+    width: 40%;
+}
+
+.checkboxgenero {
+    text-align: center;
+}
+
+.form .form-element input[type="text"], 
+.form .form-element input[type="password"],
+.form .form-element input[type="date"] {
+    display: inline-block;
+    width: 50%;
+}
+
+.form .form-element input[type="checkbox"] {
+    margin: 0 0 0 35px;
+}
+
+.botao {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.form .form-element button {
+    margin: 0;
+    width: 20%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #699ebd;
+}
+
+.form .form-element button:hover{
+    background-color: #75b0d3;
+}
+
+.form .papel input{
+    margin-left: 20px;
+}
+
+/*Cabeçalho*/
+.header{
+    background-image: linear-gradient(to top,#699ebd,#75b0d3);
+    background-color: #bbe8fb;
+    font-size: 17px;
+
+}
+
+.header .col-12{
+    float: left;
+}
+.header .logo img{
+    margin-top: 2%;
+    margin-right: 10px;
+    max-width: 100px;
+    float: left;
+}
+
+.header .dropdown .btn{
+    background-color: #bbe8fb;
+    border: #bbe8fb;
+    color: black;
+    font-size: 20px;
+    margin-top: 2px;
+}
+.header .dropdown .btn:hover{
+    background-color: #9edefa;
+}
+
+.header .nav{
+    margin-top: 2%;
+    float: right;
+    text-decoration: none;
+}
+
+.header .nav .nav-link{
+    color: #000000;
+    padding: 10px;
+}
+.header .nav .nav-link:hover{
+    color: #474747;
+}
+
+.header .nav .active{
+    text-decoration: underline;
+}
+
+/*Rodapé*/
+
+.footer{
+    margin-top: 20px;
+    background-image: linear-gradient(to top,#699ebd,#75b0d3);
+    height: 100%;
+    padding: 100px;
+}
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer ul li{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.footer ul img{
+    display: inline;
+    margin-top: 2%;
+    max-width: 50%;
+    float: left;
+}
+.footer ul li p{
+    text-decoration:solid;
+    text-transform: uppercase;
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footer ul li a{
+    font-weight:normal;
+    text-decoration: none;
+    text-transform: none;
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.footer ul li a:hover{
+    text-decoration: none;
+    color: #474747;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.footer .redes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .redes .link_rede{
+    margin: 0px;
+    display: inline;
+    width: 10%;
+    font-size: 30px;
+    margin-right: 20px;
+}
+/*Fim do rodapé*/
+
+main {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+#papo{
+    margin-top: 15px;
+}
+
+#estrela{
+    margin-top: 13px;
+}
