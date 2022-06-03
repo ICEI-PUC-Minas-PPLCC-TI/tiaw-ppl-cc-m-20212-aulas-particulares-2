@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="scripts/script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="styles/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>PAPO - Plataforma de Aulas Particulares Online</title>
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header class="header"></header>
+
+
+    <main class="main">
+        <h4 class="Professores">
+            <style>
+                .Professores {
+                    font-size: 2em;
+                    text-align: center;
+                    background-color: #a7bdee;
+                    padding: 20px;
+                    border-radius: 30px;
+                    color: #145996;
+                }
+            </style> Professores:
+        </h4>
+        <div class="PpesquisaBox">
+            <form id="PsearchBar">
+                <input id="PsearchBtn" type="submit" value="Pesquisar">
+                <input type="text" name="PsearchText" id="PsearchText" placeholder="Digite aqui">
+            </form>
+        </div>
+        <div id="listaProfessores">
+            <p id="naoTem" style="margin-top: 50px; margin-bottom: 50px; font-size: 1.5em;"><strong>Sinto muito, ainda
+                    não há professores para mostrar nessa categoria.</strong></p>
+        </div>
+    </main>
+    <!--Rodapé-->
+    <footer class="footer"></footer>
+
+    <!--Script de carregar todos os professores-->
+    <script>
+        function criaUserTeste(nome, genero, username, email, senha, papel, dataNascimento, estado, cidade, experiencia, telefone, materia, avaliacao, descricao, fotoPerfil) {
+            let newId = generateUUID();
+
+            descricao = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+            avaliacao = 5;
+            let avaliacaoQuanti = 1;
+
+            username = removeAcento(nome.replaceAll(' ', '')) + newId.replaceAll('-', '');
+            let valorMin = 0.01;
+            let valorMax = 999.99;
+            let alunos = [];
+            let usuario = { 'id': newId, 'nome': nome, 'genero': genero, 'idade': calcIdade(dataNascimento), 'username': username, 'estado': estado, 'cidade': cidade, 'dataNascimento': dataNascimento, 'telefone': telefone, 'materia': materia, 'descricao': descricao, 'avaliacao': avaliacao, 'avaliacaoQuanti': avaliacaoQuanti, 'email': email, 'senha': senha, 'papel': papel, 'experiencia': experiencia, 'fotoPerfil': fotoPerfil, 'valorMin': valorMin, 'valorMax': valorMax, 'alunos': alunos };
+
+            db_usuarios.push(usuario);
+
+            localStorage.setItem('db_usuarios', JSON.stringify(db_usuarios));
+        }
+        /*Carrega os usuários do localStorage*/
+        var db_usuarios = JSON.parse(sessionStorage.getItem('resultadoBusca'));
+        if (db_usuarios == null && !(location.href.includes('?search='))) {
+            //alert(db_usuarios);
+            //db_usuarios = JSON.parse(sessionStorage.getItem('resultadoBusca'));
+            /*Carrega alguns usuários de teste se clicar no botão*/
+            fetch(`http://localhost:3001/getProfessores`)
+                .then((response) => response.json())
+                .then((data) => {
+
+                    let listaParams = Object.keys(data[0]);
+                    let listaProf = [];
+                    for (let j = 0; j < data.length; j++) {
+
+                        let tempUser = { 'nome': '', 'genero': '', 'username': '', 'email': '', 'senha': '', 'papel': '', 'dataNascimento': '', 'estado': '', 'cidade': '', 'experiencia': '', 'telefone': '', 'materia': [], 'avaliacao': '', 'descricao': '', 'fotoPerfil': 'https://picsum.photos/id/237/200/300' };
+                        for (let i = 0; i < listaParams.length; i++) {
+
+                            tempUser[listaParams[i]] = data[j][listaParams[i]];
+                        }
+                        listaProf.push(tempUser);
+                    }
+                    for (let i = 0; i < listaProf.length; i++) {
+                        if (listaProf[i].materia.length > 0) {
+                            listaProf[i]['materia'] = listaProf[i]['materia'];
+                        }
+
+                    }
+                    sessionStorage.setItem('resultadoBusca', JSON.stringify(listaProf));
+                    window.location.href = window.location.href;
+                })
+            //.catch((error) => {alert("Erro ao logar mano");});
+
+            
+
+
+        }
+        else{
+            naoTem.style.display = 'none';
+            if (!location.href.includes('?search=')) {
+                for (let i = 0; i < db_usuarios.length; i++) {
+                    db_usuarios[i].idade = calcIdade(db_usuarios[i].dataNascimento);
+                    if (db_usuarios[i].papel == 'professor') {
+                        listaProfessores.innerHTML += `<div class="col professorApresentacao">
+                                <div class="row">
+                                    <div class="col-12 col-sm-5 col-md-3 col-lg-3">
+                                        <div class="fotoPerfil">
+                                            <img src="${db_usuarios[i].fotoPerfil}" alt="">
+                                            <p id="avaliacaoProfessor${i}"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-7 col-md-5 col-lg-5">
+                                        <div class="descricaoProfessor">
+                                            <h3 class="nomeProfessor">${db_usuarios[i].nome}</h3>
+                                            <p><small>Professor particular - ${+db_usuarios[i].experiencia} anos de expêriência</small></p>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="materiasLecionadas">
+                                                        <div id="materiasLecionadas${i}">
+                                                            <p><strong>Matérias:</strong></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="regiaoLecionada">
+                                                        <p>${db_usuarios[i].cidade}</p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                        <div class="valorAula">
+                                            <p><strong>De R$${db_usuarios[i].valorMin} até R$${db_usuarios[i].valorMax}</strong></p>
+                                            <p>Disponível</p>
+                                            <a class="btn btn-primary contratar" alt="perfilprofessor.html?id=${db_usuarios[i].id}" href="perfilprofessor.html?id=${db_usuarios[i].id}" role="button">Contratar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="professorResumo">
+                                        <div class="col-12">
+                                            <p>${db_usuarios[i].descricao}</p>
+                                        </div>                       
+                                    </div>
+                                </div>
+                            </div>`;
+                            /*Cria a lista com as matérias/
+                            let materiaAlvo = document.getElementById(`materiasLecionadas${i}`);
+                            let materiaStr = db_usuarios[0].materia;
+                            console.log("uhsbfikuh: ")
+                            console.log(materia);
+                            materiaStr = materiaStr.substring(1,materiaStr.length-1);
+                            materia = materiaStr.split(',');
+                            if (materiaAlvo != null)
+                                for (let ind = 0; ind < db_usuarios[i].materia.length; ind++) {
+                                    materiaAlvo.innerHTML += `<p>${db_usuarios[i].materia[ind]}</p>`;
+                                }
+                            /*---------------------------*/
+                    }
+                    else {
+                        console.log(db_usuarios[i].papel);
+                    }
+                    
+
+                    /*-Atualiza as avaliações-*/
+                    let avaliaAlvo = document.getElementById(`avaliacaoProfessor${i}`);
+                    let aval = db_usuarios[i].avaliacao / db_usuarios[i].avaliacaoQuanti;
+                    if (avaliaAlvo != null) {
+                        if (aval == 0) {
+                            for (let i = 0; i < 5; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 0.5) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                            for (let i = 0; i < 4; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 1) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            for (let i = 0; i < 4; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 1.5) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                            for (let i = 0; i < 3; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 2) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            for (let i = 0; i < 3; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 2.5) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                            for (let i = 0; i < 2; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 3) {
+                            for (let i = 0; i < 3; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            for (let i = 0; i < 2; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+
+                        }
+                        else if (aval <= 3.5) {
+                            for (let i = 0; i < 3; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+
+                        }
+                        else if (aval <= 4) {
+                            for (let i = 0; i < 4; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 4.5) {
+                            for (let i = 0; i < 4; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 5) {
+                            for (let i = 0; i < 5; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                        }
+                    }
+                    /*------------------------*/
+                }
+            }
+        }
+
+        /*-----------------------------------*/
+    </script>
+
+    <!--Links JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="scripts/headerFooter.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/script.js"></script>
+
+
+    <!--Script de pesquisa-->
+    <script>
+
+        /*function removeAcento(frase){
+            comAcento = 'áãâàéèêíìîóòôõúùûü';
+            semAcento = 'aaaaeeeiiioooouuuu';
+            let novaFrase = '';
+            for(i = 0;i<frase.length;i++){
+                if(comAcento.includes(frase[i])){
+                    novaFrase += frase[i].replace(comAcento[comAcento.indexOf(frase[i])],semAcento[comAcento.indexOf(frase[i])]);
+                }
+                else{
+                    novaFrase+=frase[i];
+                }                
+            }
+            return novaFrase;
+        }*/
+
+        document.getElementById('PsearchBar').onsubmit = (evento) => {
+            //location.replace(`professores.html?search=${removeAcento(PsearchText.value)}`);
+            fetch(`http://localhost:3001/search/${PsearchText.value}`)
+                .then((response) => response.json())
+                .then((data) => {
+
+                    let listaParams = Object.keys(data[0]);
+                    let listaProf = [];
+                    for (let j = 0; j < data.length; j++) {
+                        let tempUser = { 'nome': '', 'genero': '', 'username': '', 'email': '', 'senha': '', 'papel': '', 'dataNascimento': '', 'estado': '', 'cidade': '', 'experiencia': '', 'telefone': '', 'materia': [], 'avaliacao': '', 'descricao': '', 'fotoPerfil': 'https://picsum.photos/id/237/200/300' };
+                        for (let i = 0; i < listaParams.length; i++) {
+                            tempUser[listaParams[i]] = data[j][listaParams[i]];
+                            /*console.log("Tempuser: ");
+                            console.log(tempUser[listaParams[i]]);
+                            console.log("data: ");
+                            console.log(data[j][listaParams[i]]);*/
+                        }
+                        listaProf.push(tempUser);
+                    }
+                    sessionStorage.setItem('resultadoBusca', JSON.stringify(listaProf));
+
+                    window.location.href = location.href + '?search=' + PsearchText.value;
+
+                })
+            //.catch((error) => {alert("Erro ao logar");});
+            evento.preventDefault();
+        };
+
+        if (sessionStorage.getItem('resultadoBusca') != null) {
+            let resultadoBuscaProfessor = JSON.parse(sessionStorage.getItem('resultadoBusca'));
+            console.log(resultadoBuscaProfessor);
+            let i = 0;
+            while (i < resultadoBuscaProfessor.length) {
+                if (resultadoBuscaProfessor[i].papel == 'p') {
+                    naoTem.style.display = 'none';
+                    //console.log(`O professor ${resultadoBuscaProfessor[i].nome} tem o valor ${termo}`);
+                    listaProfessores.innerHTML += `<div class="col professorApresentacao">
+                        <div class="row">
+                            <div class="col-12 col-sm-5 col-md-3 col-lg-3">
+                                <div class="fotoPerfil">
+                                    <img src="${resultadoBuscaProfessor[i].fotoPerfil}" alt="">
+                                    <p id="avaliacaoProfessor${i}"></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-7 col-md-5 col-lg-5">
+                                <div class="descricaoProfessor">
+                                    <h3 class="nomeProfessor">${resultadoBuscaProfessor[i].nome}</h3>
+                                    <p><small>Professor particular - ${+resultadoBuscaProfessor[i].experiencia} anos de expêriência</small></p>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="materiasLecionadas">
+                                                <div id="materiasLecionadas${i}">
+                                                    <p><strong>Matérias:</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="regiaoLecionada">
+                                                <p>${resultadoBuscaProfessor[i].cidade}</p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="valorAula">
+                                    <p><strong>De R$${resultadoBuscaProfessor[i].valorMin} até R$${resultadoBuscaProfessor[i].valorMax}</strong></p>
+                                    <p>Disponível</p>
+                                    <a class="btn btn-primary contratar" alt="perfilprofessor.html?id=${resultadoBuscaProfessor[i].id}" href="perfilprofessor.html?id=${resultadoBuscaProfessor[i].id}" role="button">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="professorResumo">
+                                <div class="col-12">
+                                    <p>${resultadoBuscaProfessor[i].descricao}</p>
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>`;
+
+                    /*Cria a lista com as matérias*/
+                    let materiaAlvo = document.getElementById(`materiasLecionadas${i}`);
+                    let materiaStr = resultadoBuscaProfessor[0].materia;
+                    console.log(materiaStr)
+                    materiaStr = materiaStr.substring(1,materiaStr.length-1);
+                    materia = materiaStr.split(',');
+                    if (materiaAlvo != null)
+                        for (let ind = 0; ind < materia.length; ind++) {
+                            materiaAlvo.innerHTML += `<p>${materia[ind]}</p>`;
+                        }
+                    /*---------------------------*/
+                    /*-Atualiza as avaliações-*/
+                    let avaliaAlvo = document.getElementById(`avaliacaoProfessor${i}`);
+                    let aval = resultadoBuscaProfessor[i].avaliacao / resultadoBuscaProfessor[i].avaliacaoQuanti;
+                    if (avaliaAlvo != null) {
+                        if (aval == 0) {
+                            for (let i = 0; i < 5; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 0.5) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                            for (let i = 0; i < 4; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 1) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            for (let i = 0; i < 4; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 1.5) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                            for (let i = 0; i < 3; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 2) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            for (let i = 0; i < 3; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 2.5) {
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                            for (let i = 0; i < 2; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 3) {
+                            for (let i = 0; i < 3; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            for (let i = 0; i < 2; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+
+                        }
+                        else if (aval <= 3.5) {
+                            for (let i = 0; i < 3; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+
+                        }
+                        else if (aval <= 4) {
+                            for (let i = 0; i < 4; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 4.5) {
+                            for (let i = 0; i < 4; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                            avaliaAlvo.innerHTML += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+                        }
+                        else if (aval <= 5) {
+                            for (let i = 0; i < 5; i++)
+                                avaliaAlvo.innerHTML += '<i class="fa fa-star" aria-hidden="true"></i>';
+                        }
+                    }
+                    /*------------------------*/
+                }
+                i++;
+            }
+        }
+    </script>
+</body>
+
+</html>

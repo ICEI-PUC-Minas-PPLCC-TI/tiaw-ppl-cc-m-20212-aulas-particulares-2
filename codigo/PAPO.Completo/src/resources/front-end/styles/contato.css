@@ -1,0 +1,27 @@
+
+.h1 small {
+font-size: 24px;
+
+}
+label{
+  color: black;
+}
+
+#button{
+    background-color:#6ca1c0; 
+    color: black;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px; 
+    margin-top: 10px;
+}
+
+.h1{
+  text-align: center;
+}
+
+.tudo {
+  width: 100%;
+  margin: 0;
+}
